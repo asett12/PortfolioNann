@@ -5,7 +5,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
-import profilePic from "../../public/images/profile/Riley.png";
+import profilePic from "../../public/images/profile/Nann.png";
+import TypewriterText from "@/components/TypewriterText";
 
 export default function Home() {
   return (
@@ -24,36 +25,57 @@ export default function Home() {
       >
         <Layout className="!pt-24 md:!pt-16 sm:!pt-28">
           <div className="flex w-full items-start justify-between md:flex-col pt-10 pb-24">
+            {/* left image */}
             <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">
-              {
+              <div
+                className="relative h-[450px] w-[450px] overflow-hidden rounded-2xl shadow-xl 
+                          hover:shadow-2xl transition-all duration-500 ease-out transform 
+                          hover:-translate-y-2 hover:scale-[1.02] border border-gray-700/20 
+                          bg-gradient-to-b from-gray-900/40 to-gray-800/10 backdrop-blur-sm"
+              >
                 <Image
-                  priority={true}
+                  priority
                   src={profilePic}
                   alt="image"
-                  className="h-auto w-100"
-                  height={340}
-                  width={340}
-                  sizes="33vw"
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 450px, 50vw"
                 />
-              }
+              </div>
             </div>
+
+
+
+            {/* text side */}
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Hey, I’m Riley"
+                text="Hey, I’m Nann"
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <div className="flex w-1/2 w-full items-center items-start lg:w-full  lg:!justify-center  sm:!justify-center  md:!text-center md:inline-block md:w-full">
-                <h2 className="animate-text bg-gradient-to-r from-lightGreen via-lightGreen to-slideGreen bg-clip-text text-transparent font-semibold capitalize !text-5xl xl:!text-4xl lg:!text-4xl md:!text-5xl sm:!text-3xl">
-                  I create engaging web experiences.
+
+              {/* typewriter section */}
+              <div className="flex w-full items-start lg:w-full lg:justify-center sm:justify-center md:text-center md:inline-block">
+                <h2
+                  className="animate-text bg-gradient-to-r from-lightGreen via-lightGreen to-slideGreen bg-clip-text text-transparent font-semibold capitalize
+                  !text-5xl xl:!text-4xl lg:!text-4xl md:!text-5xl sm:!text-3xl"
+                >
+                  <TypewriterText
+                    words={[
+                      "Creative Event &",
+                      "Marketing Enthusiast",
+                    ]}
+                    typingSpeed={85}
+                    eraseSpeed={55}
+                    delayBetween={1500}
+                    className="text-transparent bg-clip-text"
+                  />
                 </h2>
               </div>
 
               <p className="my-4 text-base font-medium md:text-sm sm:!text-sm">
-                I'm a front-end web developer at Stellar Innovations, passionate
-                about creating dynamic and user-friendly web experiences. With a
-                keen eye for design and a robust understanding of front-end and
-                back-end technologies.
+                I'm a fresh graduate business student passionate about creating meaningful experiences through event management, marketing and creative collaboration. I enjoy bringing people together and turning ideas into reality.
               </p>
+
               <div className="mt-2 flex items-center self-start gap-3 grid-cols-2 lg:self-center">
                 <Link
                   href="/about/"
@@ -81,17 +103,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <div className="fixed right-8 bottom-8 inline-block md:hidden">
-          <iframe
-            className="iframe"
-            title="Noongar Seasonal Calendar"
-            width="280"
-            height="120"
-            src="https://seasonal-au.netlify.app/"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
         <HireMe />
       </article>
     </>
