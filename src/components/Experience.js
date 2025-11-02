@@ -16,10 +16,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="font-bold text-2xl sm:text-xl xs:text-lg">
           {position}{" "}
+          <br/>
           <a
-            className="capitalize text-slideGreen dark:text-primaryDark"
+            className="text-slideGreen dark:text-primaryDark"
             href={companyLink}
             target={"_blank"}
           >
@@ -61,21 +62,30 @@ const Experience = () => {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Developer"
-            company="Stellar Innovations"
-            time="2020 - 2024"
-            address="200 Innovations st"
-            companyLink="https://github.com/lilxyzz/clay-theme"
-            work="At Stellar Innovations, I serve as a web developer, where I play a crucial role in designing and implementing cutting-edge web solutions. My responsibilities include developing responsive and high-performance websites and applications using technologies such as HTML, CSS, JavaScript, React, and Node.js. I collaborate closely with cross-functional teams to ensure our projects meet the highest standards of functionality and user experience. One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development."
+            position="Sales & Outreach Intern"
+            company="Buddy Up Company Limited"
+            time="May - August (2025)"
+            address="Bangkok 10600"
+            companyLink="https://www.linkedin.com/company/megoodyth/"
+            work="From May to August 2025, I completed my 4 months internship as a Sales & Outreach Intern at ME GOODY Space (Buddy Up Co.Ltd.) 
+                  near ICONSIAM, Bangkok. I was responsible for managing event promotions, designing engaging posters and marketing materials 
+                  and conducting outreach to potential partners and creative collaborators. I contributed to social media marketing by creating content calendars, 
+                  scheduling posts through Meta Business Suite, and promoting space rental opportunities to target audiences. In addition, I supported market research 
+                  and client engagement efforts by identifying potential customers, analyzing competitors, and helping plan creative workshops and events 
+                  that strengthened ME GOODY’s brand presence and community connections. Those experiences strengthened my skills in communication, digital marketing, and client relations, 
+                  while also helping me to grow personally and professionally in a supportive, and creative environment ."
           />
 
           <Details
-            position="Rad Tester"
-            company="Vault Technologies"
-            time="2018 - 2020"
-            address="404 Tech st"
-            companyLink="https://github.com/lilxyzz/holo-theme"
-            work="At Vault Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
+            position="Marketing Intern"
+            company="aboveA"
+            time="March - April (2025)"
+            address="Remote"
+            companyLink="https://www.linkedin.com/company/abovea-agency/"
+            work="During my 2-month internship as a Marketing Intern at aboveA Agency, I was actively involved in developing and executing creative marketing initiatives. 
+                  My responsibilities included creating TikTok videos and writing engaging content to strengthen the brand’s online presence. I also conducted market research 
+                  to identify target audiences, analyze consumer behavior, and support campaign planning. In addition, I participated in brainstorming sessions with the marketing team, 
+                  where I contributed ideas that helped shape innovative social media strategies and promotional campaigns, enhancing both engagement and brand visibility."
           />
         </ul>
       </div>

@@ -301,71 +301,7 @@ export const MARKETING_EXPERIENCES = [
             caption: "Booth Setup"
         },
     ],
-  },
-  {
-    id: "rsunival",
-    title: "RSUnival 2024",
-    headline: "RSUnival 2024 – Food Booth Experience",
-    tag: "Sales | Customer Service | Marketing Strategies",
-    overview:
-      "During the RSUnival event, I managed a food booth that featured Korean Kimbap (Day 1) and Mala Luk Chin Salad (Day 2). Both products were selected based on current student food trends and sold out on both days.",
-    bullets: [
-      "Managed product pricing and real-time sales during peak hours.",
-      "Engaged directly with customers to promote products and adapted strategies to maximize sales.",
-    ],
-    learning:
-      "This experience strengthened my ability to analyze consumer behavior and work efficiently under pressure.",
-    image: proj1,
-    links: [
-      { href: "/projects/marketing/rsunival", label: "View Related Work", primary: true },
-    ],
-    gallery: [
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-    ],
-  },
-  {
-    id: "pro-in-style",
-    title: "“Pro In Style” Event 2024",
-    headline: "“Pro In Style” Event – Photobooth Experience",
-    tag: "Event Promotion | Campaign Planning",
-    overview:
-      "Worked on a campaign — “Buy 1 Bubble Tea, Get 1 Polaroid Photo Free” — to increase engagement and sales by combining product promotion with an interactive experience.",
-    bullets: [
-      "Collaborated on branding, pricing strategy, and on-site customer interaction.",
-      "Helped design a visually appealing booth and campaign visuals to attract attendees.",
-    ],
-    learning:
-      "Improved understanding of experiential marketing, audience targeting, and fast decision-making in an event environment.",
-    image: proj1,
-    links: [
-      { href: "/projects/marketing/pro-in-style", label: "View Related Work", primary: true },
-    ],
-    gallery: [
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
-        },
-    ],
-  },
+  }
 ];
 
 // main map that your pages read from

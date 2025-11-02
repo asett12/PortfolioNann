@@ -9,14 +9,31 @@ import Image from "next/image";
 import Link from "next/link";
 import { GithubIcon, DevIcon, LinkedInIcon } from "@/components/Icons";
 
+// small inline icon for the back button
+function ArrowLeftIcon({ className = "w-4 h-4" }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+  );
+}
+
 // 1) Single slide
 function Slide({ item, slug }) {
   return (
     <section
       className="
         flex w-full items-start gap-8 mb-4
-        flex-row-reverse     /* desktop: image RIGHT, text LEFT */
-        md:flex-col          /* mobile: stack (image top, text below) */
+        flex-row-reverse
+        md:flex-col
       "
     >
       {/* IMAGE RIGHT (desktop) / TOP (mobile) */}
@@ -25,7 +42,7 @@ function Slide({ item, slug }) {
           flex-[0_0_360px] max-w-[420px] relative
           rounded-2xl border-2 border-solid border-dark bg-light p-4
           dark:border-light dark:bg-dark
-          md:w-full md:max-w-none   /* mobile: full width */
+          md:w-full md:max-w-none
         "
       >
         <div className="pointer-events-none absolute top-0 -left-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-bl-3xl bg-dark dark:bg-light" />
@@ -135,9 +152,7 @@ function Slide({ item, slug }) {
   );
 }
 
-
-
-// 2) Slider
+// 2) Slider (FIXED CONTROLS)
 function Slider({ items, slug }) {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -165,25 +180,34 @@ function Slider({ items, slug }) {
   }, [goNext, goPrev]);
 
   return (
-    <div className="relative w-full">
-      <div className="relative flex items-center justify-center">
-        <AnimatePresence custom={direction} mode="popLayout">
-          <motion.div
-            key={items[index].id}
-            custom={direction}
-            initial={{ opacity: 0, x: direction > 0 ? 60 : -60 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: direction > 0 ? -60 : 60 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="w-full"
-          >
-            <Slide item={items[index]} slug={slug} />
-          </motion.div>
-        </AnimatePresence>
+    // pb-16 = reserve space for absolutely positioned controls
+    <div className="relative w-full pb-10">
+      {/* fixed height-ish slide area so layout doesn’t jump */}
+      <div className="relative min-h-[520px] md:min-h-[580px]">
+        <div className="relative flex items-center justify-center h-full">
+          <AnimatePresence custom={direction} mode="popLayout">
+            <motion.div
+              key={items[index].id}
+              custom={direction}
+              initial={{ opacity: 0, x: direction > 0 ? 60 : -60 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: direction > 0 ? -60 : 60 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
+              className="w-full"
+            >
+              <Slide item={items[index]} slug={slug} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
       </div>
 
-      {/* controls */}
-      <div className="mt-4 flex items-center justify-between gap-4">
+      {/* controls: now ABSOLUTE, so they don't move */}
+      <div
+        className="
+          absolute bottom-10 left-0 right-0
+          flex items-center justify-between gap-4
+        "
+      >
         <div className="flex gap-2">
           <button
             onClick={goPrev}
@@ -238,6 +262,17 @@ export default function ProjectCategoryPage({ category, slug }) {
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
+          {/* Back to Projects button */}
+          <Link
+            href="/projects"
+            className="inline-flex items-center gap-2 mb-6 text-dark dark:text-light 
+                       hover:text-lightGreen dark:hover:text-primaryDark hover:underline
+                       transition-all duration-200"
+          >
+            <ArrowLeftIcon className="w-4 h-4" />
+            Back to Projects
+          </Link>
+
           <AnimatedText
             text={category.title}
             className="mb-8 !text-6xl !leading-tight lg:!text-5xl sm:!text-4xl xs:!text-3xl"

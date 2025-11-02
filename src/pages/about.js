@@ -64,27 +64,13 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                I'm Riley, a dedicated web developer at Stellar Innovations,
-                where I specialize in creating dynamic and user-centric web
-                experiences. With over a decade of experience in the industry, I
-                have honed my skills in both front-end and back-end
-                technologies, allowing me to deliver responsive and
-                high-performance websites and applications.
+                Hi! I’m Nan Ohmar Wai, a fresh graduate International Business student at Rangsit University with a strong passion for event management, digital marketing, and community engagement. I’m highly motivated, detail-oriented, and thrive in dynamic environments where creativity meets organization.
+                Over the past few years, I’ve gained hands-on experience in sales outreach, event planning, and promotional campaigns through internships and student projects. These experiences have strengthened my skills in strategic planning, project coordination, communication, and market analysis.
               </p>
               <p className="my-4 font-medium">
-                At Stellar Innovations, I've had the opportunity to work on
-                numerous high-profile projects that have challenged and expanded
-                my expertise. My technical skill set includes HTML, CSS,
-                JavaScript, React, and Node.js, among other technologies. One of
-                my notable projects involved developing a comprehensive
-                e-commerce platform that streamlined the user experience and
-                significantly boosted the client's sales. Another project I’m
-                particularly proud of was creating an interactive web
-                application for a major event, which received widespread acclaim
-                for its intuitive design and seamless performance.
-              </p>
-              <p className="my-4 font-medium">
-                P.s I'm a big fan of anime and not a real person ✌️.
+                Beyond academics, I’ve also participated in volunteer programs, leadership initiatives, and social impact projects, which have allowed me to develop a deeper understanding of teamwork, youth empowerment, and community engagement.
+                I’m passionate about creating meaningful experiences and building connections through events, marketing, and creative projects. My goal is to continue growing as a marketing and event professional—combining business strategy with creativity to make a positive impact wherever I work.
+
               </p>
             </div>
             <div
