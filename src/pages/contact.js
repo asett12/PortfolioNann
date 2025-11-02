@@ -5,43 +5,43 @@ import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useRouter } from "next/router";
 
-// Netlify Form config
-
-export default function About() {
+export default function Contact() {
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const myForm = e.target;
-    const formData = new FormData(myForm);
+    setIsSubmitting(true);
+    setErrorMsg("");
+
     try {
-      const response = await fetch("/", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(formData).toString(),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        // Handle success, e.g., redirect to a thank you page
+      if (res.ok) {
         router.push("/thanks");
       } else {
-        // Handle error
-        console.error("Form submission failed!", response);
+        const data = await res.json();
+        setErrorMsg(data.message || "Something went wrong.");
       }
-    } catch (error) {
-      // Handle error
-      console.error("An error occurred during form submission:", error);
+    } catch (err) {
+      console.error(err);
+      setErrorMsg("Network error. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -56,105 +56,93 @@ export default function About() {
       </Head>
 
       <TransitionEffect />
-      <main
-        className={`flex w-full flex-col items-center justify-center dark:text-light`}
-      >
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Begin Today,
-I'm One Message Away 👋"
+            text="Begin Today, I'm One Message Away 👋"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 relative flex w-full flex-col items-center justify-center rounded-2xl rounded-br-2xl border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4">
-            <div className="absolute top-0 -right-5 -z-10 h-[103%] w-[101.5%] rounded-[2rem] rounded-br-3xl bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 relative rounded-2xl border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4">
+            <div className="absolute top-0 -right-5 -z-10 h-[103%] w-[101.5%] rounded-[2rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+
+            {/* left part */}
             <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-1 md:col-span-8">
               <h2 className="my-4 text-2xl font-bold capitalize text-primaryDark dark:text-primaryDark">
                 What’s Next?
               </h2>
-
-              <div className="w-full"></div>
-              <p className="">
+              <p>
                 My inbox is always open. Whether you have a question or just
-                want to say hello, I'll try my best to get back to you! Feel
-                free to message me about any relevant project updates.
+                want to say hello, I&apos;ll try my best to get back to you!
               </p>
             </div>
-            <div className="relative col-span-4 h-max xl:col-span-4 md:col-span-8 md:order-2">
-              <div className="grid w-full grid-cols-2 sm:gap-6 relative flex w-full flex-col items-center justify-center rounded-2xl rounded-br-2xl border  border-solid  border-dark bg-light p-6   dark:border-light dark:bg-dark xs:p-4">
-                <div className="col-span-8 h-max xl:col-span-6 md:col-span-8 md:order-2">
-                  <form
-                    name="contact-form"
-                    method="POST"
-                    onSubmit={handleSubmit}
-                  >
+
+            {/* form */}
+            <div className="col-span-4 xl:col-span-4 md:col-span-8 md:order-2">
+              <form onSubmit={handleSubmit}>
+                <div className="p-2">
+                  <label className="block text-sm font-medium text-dark dark:text-light">
+                    Your Name:
                     <input
-                      type="hidden"
-                      name="form-name"
-                      value="contact-form"
+                      type="text"
+                      name="name"
+                      required
+                      autoComplete="name"
+                      className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
+                      onChange={handleChange}
                     />
-                    <p className="hidden">
-                      <label>
-                        Name
-                        <input name="bot-field" />
-                      </label>
-                    </p>
-                    <div className="col-span-1 p-2">
-                      <label className="block text-sm font-medium text-dark dark:text-light">
-                        Your Name:
-                        <input
-                          type="text"
-                          name="name"
-                          required
-                          autoComplete="name"
-                          className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
-                          onChange={handleChange}
-                        />
-                      </label>
-                    </div>
-
-                    <div className="col-span-1 p-2">
-                      <label className="block text-sm font-medium text-dark/75 dark:text-light/75">
-                        Your Email:
-                        <input
-                          type="email"
-                          name="email"
-                          required
-                          autoComplete="off"
-                          className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
-                          onChange={handleChange}
-                        />
-                      </label>
-                    </div>
-
-                    <div className="col-span-1 p-2">
-                      <label
-                        htmlFor="message"
-                        className="block text-sm font-medium text-dark/75 dark:text-light/75"
-                      >
-                        Message:
-                        <textarea
-                          name="message"
-                          id="message"
-                          required
-                          rows="4"
-                          className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
-                          onChange={handleChange}
-                        ></textarea>
-                      </label>
-                    </div>
-
-                    <div className="col-span-1 p-2">
-                      <button
-                        type="submit"
-                        className="px-4 py-2 font-bold capitalize text-light bg-dark border border-2 border-solid border-dark dark:border-light dark:bg-light rounded-md hover:bg-transparent hover:text-dark dark:hover:text-light dark:hover:bg-dark dark:hover:border-light dark:hover:bg-dark dark:text-dark dark:hover:text-light"
-                      >
-                        Send it!
-                      </button>
-                    </div>
-                  </form>
+                  </label>
                 </div>
-              </div>
+
+                <div className="p-2">
+                  <label className="block text-sm font-medium text-dark/75 dark:text-light/75">
+                    Your Email:
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      autoComplete="off"
+                      className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+
+                <div className="p-2">
+                  <label className="block text-sm font-medium text-dark/75 dark:text-light/75">
+                    Message:
+                    <textarea
+                      name="message"
+                      rows="4"
+                      required
+                      className="mt-1 p-2 w-full border border-solid border-dark rounded-md bg-light dark:border-light dark:bg-dark dark:text-light"
+                      onChange={handleChange}
+                    />
+                  </label>
+                </div>
+
+                {errorMsg ? (
+                  <p className="p-2 text-sm text-red-500">{errorMsg}</p>
+                ) : null}
+
+                <div className="p-2">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="px-6 py-3 font-semibold rounded-lg
+                      bg-dark text-light border border-light
+                      hover:bg-transparent hover:text-dark hover:border-dark
+                      dark:bg-light dark:text-dark dark:hover:bg-transparent 
+                      dark:hover:text-light dark:hover:border-light
+                      transition-all duration-300
+                      disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {isSubmitting ? "Sending..." : "Send it!"}
+                  </button>
+                </div>
+
+
+              </form>
             </div>
           </div>
         </Layout>
