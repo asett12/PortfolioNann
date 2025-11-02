@@ -51,10 +51,13 @@ const Experience = () => {
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
         <motion.div
-          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-primaryDark shadow-3xl 
-            origin-top  dark:bg-primaryDark dark:shadow-3xl"
+          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full 
+            origin-top shadow-3xl 
+            bg-gradient-to-b from-[#7b5cff] to-[#3c2bc0]
+            dark:bg-gradient-to-b dark:from-[#3c2bc0] dark:to-[#7b5cff] dark:shadow-[0_0_10px_#7b5cff]"
           style={{ scaleY: scrollYProgress }}
         />
+
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
