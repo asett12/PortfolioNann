@@ -250,35 +250,35 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
+                type="Event & Campaign Planning"
+                tools="Sales | Event Marketing | Customer Engagement"
+                title="Event Projects"
+                
                 img={proj1}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="/projects/events"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
+                type="Research & Visual Designs"
+                tools="UI/UX Designs | Innovation | Research"
+                title="Academic & Innovation Projects"
                 img={proj1}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="/projects/academic"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
+                type="Marketing & Campaign Planning"
+                tools="Project Management | Communication"
+                title="Marketing Campaigns Projects"
                 img={proj1}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="/projects/marketing"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
               />
             </div>
