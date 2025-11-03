@@ -1,5 +1,5 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
+import { LinkedInIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -78,7 +78,7 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => {
+const FeaturedProject = ({ type, title, summary, img, link, linkedIn, tools }) => {
   return (
     <article
       className="relative flex w-full items-center justify-between rounded-3xl border
@@ -128,14 +128,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github, tools }) => 
         )}
 
         <div className="mt-2 flex items-center">
-          {github && (
+          {linkedIn && (
             <Link
-              href={github}
+              href={linkedIn}
               target="_blank"
               className="w-10"
-              aria-label="GitHub link"
+              aria-label="LinkedIn link"
             >
-              <GithubIcon />
+              <LinkedInIcon />
             </Link>
           )}
           <Link
@@ -236,7 +236,7 @@ export default function Projects() {
                 img={proj1}
                 date="2023"
                 link="/projects/events"          // ✅ now dynamic slug
-                github="https://github.com/lilxyzz"
+                linkedIn="https://www.linkedin.com/in/nanohnmarwai109/"
               />
             </div>
 
@@ -248,7 +248,6 @@ export default function Projects() {
                 img={proj1}
                 date="2023"
                 link="/projects/academic"        // ✅ dynamic slug
-                github="https://github.com/lilxyzz"
               />
             </div>
 
@@ -260,7 +259,6 @@ export default function Projects() {
                 img={proj1}
                 date="2023"
                 link="/projects/marketing"       // ✅ dynamic slug
-                github="https://github.com/lilxyzz"
               />
             </div>
           </div>
@@ -268,16 +266,9 @@ export default function Projects() {
           {/* ---- Footer section ---- */}
           <div>
             <ul className="flex flex-col items-center relative pt-16">
-              <Article
-                title="Adding more soon, thanks for the interest!"
-                img={loading}
-                time="1 min read"
-                date=""
-                link="https://github.com/lilxyzz/"
-              />
             </ul>
 
-            <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
+            <div className="mt-10 flex items-center justify-between gap-3 grid-cols-2">
               <Link
                 href="/articles/"
                 className="flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
@@ -300,7 +291,8 @@ export default function Projects() {
             </div>
 
             <HireMe2 />
-          </div>
+        </div>
+
         </Layout>
       </main>
     </>

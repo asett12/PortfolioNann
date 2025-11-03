@@ -96,44 +96,48 @@ export default function About() {
             </div>
             <div
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
-            xl:items-center md:order-3"
+              xl:items-center md:order-3"
             >
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              {/* Events & Workshops */}
+              <div className="flex flex-col items-end justify-center text-right">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={10} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-end md:text-lg sm:text-base xs:text-sm"
+                  text-right md:text-lg sm:text-base xs:text-sm"
                 >
                   Events & Workshops Supported
                 </h3>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              {/* Social Media Posts */}
+              <div className="flex flex-col items-end justify-center text-right">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={25} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                  text-right md:text-lg sm:text-base xs:text-sm"
                 >
                   Social Media Posts Designed & Published
                 </h3>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              {/* Combined Reach */}
+              <div className="flex flex-col items-end justify-center text-right">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={5000} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                  text-right md:text-lg sm:text-base xs:text-sm"
                 >
                   Combined Social Media Reached
                 </h3>
               </div>
             </div>
+
             <HireMe2 />
           </div>
 

@@ -187,17 +187,10 @@ export default function Articles() {
             />
           </ul>
 
-          <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
-            All Articles
-          </h2>
+          <ul className="mt-20">
+          </ul>
 
           <ul className="flex flex-col items-center relative">
-            <Article
-              title="Adding more soon, thanks for the interest!"
-              img={loading}
-              date=""
-              link="https://github.com/lilxyzz/"
-            />
           </ul>
 
           <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">

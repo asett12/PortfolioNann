@@ -119,34 +119,23 @@ const Navbar = () => {
           <motion.a
             target={"_blank"}
             className="w-7 mr-3"
-            href="https://github.com/lilxyzz"
+            href="https://www.linkedin.com/in/nanohnmarwai109/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Checkout my GitHub profile"
           >
-            <GithubIcon />
+            <LinkedInIcon />
           </motion.a>
 
           <motion.a
             target={"_blank"}
             className="w-7 mx-3 bg-light rounded-full"
-            href="https://medium.com/@travis.lord"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Medium profile"
+            aria-label="Send Email To Me"
           >
             <MediumIcon />
-          </motion.a>
-
-          <motion.a
-            target={"_blank"}
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my Dev.to profile"
-          >
-            <DevIcon />
           </motion.a>
 
           <motion.a
@@ -221,34 +210,25 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mr-3"
-              href="https://github.com/lilxyzz"
+              href="https://www.linkedin.com/in/nanohnmarwai109/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Github profile"
+              aria-label="Checkout my LinkedIn profile"
             >
-              <GithubIcon />
+              <LinkedInIcon />
             </motion.a>
 
             <motion.a
               target={"_blank"}
-              className="w-6 mx-3 bg-light rounded-full"
-              href="https://medium.com/@travis.lord"
+              className="w-7 mx-3 bg-light rounded-full"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Medium profile"
+              aria-label="Send Email To Me"
             >
               <MediumIcon />
             </motion.a>
-            <motion.a
-              target={"_blank"}
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Dev.to profile"
-            >
-              <DevIcon />
-            </motion.a>
+
             <motion.a
               target={"_blank"}
               className="w-6 mx-3"

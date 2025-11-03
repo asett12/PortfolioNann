@@ -7,7 +7,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import { PROJECT_CATEGORIES } from "@/data/portfolioData";
 import Image from "next/image";
 import Link from "next/link";
-import { GithubIcon, DevIcon, LinkedInIcon } from "@/components/Icons";
+import { GithubIcon, DevIcon, LinkedInIcon, MediumIcon } from "@/components/Icons";
 
 // small inline icon for the back button
 function ArrowLeftIcon({ className = "w-4 h-4" }) {
@@ -125,16 +125,16 @@ function Slide({ item, slug }) {
 
           {item.links?.length
             ? item.links.map((link) => {
-                if (link.icon === "github")
+                if (link.icon === "linkedIn")
                   return (
                     <Link key={link.href} href={link.href} target="_blank" className="w-9">
-                      <GithubIcon />
+                      <LinkedInIcon />
                     </Link>
                   );
-                if (link.icon === "dev")
+                if (link.icon === "medium")
                   return (
                     <Link key={link.href} href={link.href} target="_blank" className="w-9">
-                      <DevIcon />
+                      <MediumIcon />
                     </Link>
                   );
                 if (link.icon === "linkedIn")
@@ -204,7 +204,7 @@ function Slider({ items, slug }) {
       {/* controls: now ABSOLUTE, so they don't move */}
       <div
         className="
-          absolute bottom-10 left-0 right-0
+          absolute bottom-10 md:bottom-[-20px] left-0 right-0
           flex items-center justify-between gap-4
         "
       >
@@ -261,7 +261,7 @@ export default function ProjectCategoryPage({ category, slug }) {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-[30px]">
           {/* Back to Projects button */}
           <Link
             href="/projects"

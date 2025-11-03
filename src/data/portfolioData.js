@@ -21,8 +21,8 @@ export const EVENT_PROJECTS = [
       { href: "/projects/events/itcma", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
 
@@ -59,8 +59,8 @@ export const EVENT_PROJECTS = [
       { href: "/projects/events/rsunival", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     gallery: [
@@ -97,8 +97,8 @@ export const EVENT_PROJECTS = [
       { href: "/projects/events/pro-in-style", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     gallery: [
@@ -146,10 +146,10 @@ export const ACADEMIC_PROJECTS = [
     `.trim(),
     links: [
       { href: "/projects/academic/china-asean", label: "Visit Demo", primary: true },
-      { href: "https://github.com/lilxyzz/clay-theme", icon: "github" },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     image: proj1,
@@ -192,10 +192,10 @@ export const ACADEMIC_PROJECTS = [
     `.trim(),
     links: [
       { href: "/projects/academic/rsu-pitch", label: "Visit Demo", primary: true },
-      { href: "https://github.com/lilxyzz/clay-theme", icon: "github" },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     image: proj1,
@@ -237,10 +237,10 @@ export const ACADEMIC_PROJECTS = [
     `.trim(),
     links: [
       { href: "/projects/academic/loreal", label: "Visit Demo", primary: true },
-      { href: "https://github.com/lilxyzz/clay-theme", icon: "github" },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     image: proj1,
@@ -281,10 +281,10 @@ export const MARKETING_EXPERIENCES = [
     image: proj1,
     links: [
       { href: "/projects/marketing/save4paws", label: "View Related Work", primary: true },
-      { href: "https://github.com/lilxyzz/clay-theme", icon: "github" },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://dev.to/lilxyzz/clay-theme-unlocking-the-power-of-gatsby-v5-and-netlifycms-with-clay-theme-njn",
-        icon: "dev",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
       },
     ],
     gallery: [

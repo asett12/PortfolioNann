@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 import { getProjectFromCategory } from "@/data/portfolioData";
 
 export default function ProjectGalleryPage() {
@@ -13,19 +14,32 @@ export default function ProjectGalleryPage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900 dark:bg-[#1c1c1d] dark:text-slate-100">
-      {/* Header */}
-      <div className="mx-auto max-w-5xl py-12 px-4 md:px-0 text-center">
-        <p className="text-xs uppercase tracking-[0.15em] text-slate-400 dark:text-slate-500 mb-3">
-          {slug} / {projectId}
-        </p>
-        <h1 className="text-3xl md:text-4xl font-semibold text-slate-800 dark:text-slate-50 mb-3">
-          {project?.headline || project?.title || "Project Gallery"}
-        </h1>
-        <p className="text-slate-400 dark:text-slate-400/90 max-w-2xl mx-auto text-sm leading-relaxed">
-          {project?.overview ||
-            "A collection of photos and assets from this project."}
-        </p>
+      <div className="pl-40 pt-[30px]">
+        <Link
+          href={`/projects/${slug}`}
+          className="inline-flex items-center gap-2 mb-6 text-dark dark:text-light 
+                      hover:text-lightGreen dark:hover:text-primaryDark hover:underline
+                      transition-all duration-200"
+        >
+          <ArrowLeftIcon className="w-4 h-4" />
+          Back to Projects
+        </Link>
       </div>
+
+        {/* Header */}
+        <div className="py-6 text-center">
+          <p className="text-xs uppercase tracking-[0.15em] text-slate-400 dark:text-slate-500 mb-3">
+            {slug} / {projectId}
+          </p>
+          <h1 className="text-3xl md:text-4xl font-semibold text-slate-800 dark:text-slate-50 mb-3">
+            {project?.headline || project?.title || "Project Gallery"}
+          </h1>
+          <p className="text-slate-400 dark:text-slate-400/90 max-w-2xl mx-auto text-sm leading-relaxed">
+            {project?.overview ||
+              "A collection of photos and assets from this project."}
+          </p>
+        </div>
+
 
       {/* Gallery */}
       <div className="mx-auto max-w-6xl px-4 md:px-0 pb-16">
@@ -51,6 +65,22 @@ export default function ProjectGalleryPage() {
   );
 }
 
+function ArrowLeftIcon({ className = "w-4 h-4" }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+  );
+}
+
 function GalleryCard({ src, caption }) {
   return (
     <div
@@ -61,12 +91,12 @@ function GalleryCard({ src, caption }) {
         shadow-sm hover:shadow-lg dark:hover:shadow-slate-900/30
         transition-transform duration-500
         group
-        hover:-translate-y-2   /* ✨ float upward */
+        hover:-translate-y-2
       "
     >
       <Image
         src={src}
-        alt={caption || 'Gallery image'}
+        alt={caption || "Gallery image"}
         width={600}
         height={400}
         className="
@@ -76,10 +106,9 @@ function GalleryCard({ src, caption }) {
         "
       />
 
-      {/* bottom overlay */}
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent p-4">
         <p className="text-white text-sm md:text-base font-medium drop-shadow">
-          {caption || 'Untitled photo'}
+          {caption || "Untitled photo"}
         </p>
         <p className="text-white/70 text-[11px] uppercase tracking-wide">
           Gallery
@@ -88,4 +117,3 @@ function GalleryCard({ src, caption }) {
     </div>
   );
 }
-
