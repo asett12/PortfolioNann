@@ -46,8 +46,8 @@ const Experience = () => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Experience
+      <h2 className="font-bold text-7xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Internship
       </h2>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
@@ -67,13 +67,7 @@ const Experience = () => {
             time="May - August (2025)"
             address="Bangkok 10600"
             companyLink="https://www.linkedin.com/company/megoodyth/"
-            work="From May to August 2025, I completed my 4 months internship as a Sales & Outreach Intern at ME GOODY Space (Buddy Up Co.Ltd.) 
-                  near ICONSIAM, Bangkok. I was responsible for managing event promotions, designing engaging posters and marketing materials 
-                  and conducting outreach to potential partners and creative collaborators. I contributed to social media marketing by creating content calendars, 
-                  scheduling posts through Meta Business Suite, and promoting space rental opportunities to target audiences. In addition, I supported market research 
-                  and client engagement efforts by identifying potential customers, analyzing competitors, and helping plan creative workshops and events 
-                  that strengthened ME GOODY’s brand presence and community connections. Those experiences strengthened my skills in communication, digital marketing, and client relations, 
-                  while also helping me to grow personally and professionally in a supportive, and creative environment ."
+            work="From May to August 2025, I completed my 4 months internship as a Sales & Outreach Intern at ME GOODY Space (Buddy Up Co., Ltd.) near ICONSIAM, Bangkok. I managed event promotions, designed marketing materials, and reached out to potential partners and collaborators. I also contributed social media marketing by creating content calendars, scheduling posts, and promoting space rentals. “ Additionally, I assisted with market research and event planning, which helped strengthen ME GOODY’s brand presence and community connections. This experience improved my communication, digital marketing, and client relation, while also helping me to grow personally and professionally in a supportive, and creative environment ."
           />
 
           <Details
@@ -110,7 +104,7 @@ const Experience = () => {
             md:p-2 md:px-4 md:text-base
              `}
         >
-          View Articles
+          View Experience
         </Link>
       </div>
     </div>

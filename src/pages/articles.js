@@ -144,23 +144,45 @@ export default function Articles() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Words Influence the World 🌎"
-            className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            text="Creating Experiences that connect and inspire 💭"
+            className="!text-7xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={blog1}
-              title="Unlocking the Power of Gatsby & Netlify"
-              time="2 min read"
-              summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
+              title="Beyond Books - Assistant Coach"
+              time="June 2024 - Present"
+              summary="I assist instructors in managing classroom activities and support with administrative and coordination tasks."
               link="https://travislord.xyz/articles/guide-to-clay-theme-gatsby-web-app"
             />
 
             <FeaturedArticle
               img={blog2}
-              title="My MacBook Setup For Development 2024"
-              time="4 min read"
-              summary="As we step into another year of exciting journeys, I figured it was the perfect moment to unveil the newest adjustments and tools I'm using in my MacBook setup."
+              title="RIC Badminton Club - PR Officer"
+              time="Mar 2023 - Apr 2025"
+              summary="I managed the club’s social media accounts to promoted club activities and coordinated with other student clubs. "
+              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
+            />
+            <FeaturedArticle
+              img={blog2}
+              title="RIC Language Centre - Team Leader"
+              time="Aug 2022 - Jan 2024"
+              summary="I supervised and assigned tasks to peer mentors and facilitated effective communication between students and mentors.
+"
+              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
+            />
+            <FeaturedArticle
+              img={blog2}
+              title="Academic Initiative for Youth Club - Organizer & Co-Founder"
+              time="Feb 2020 - Mar 2022"
+              summary="AIFYC Club was founded with the aim to conduct research on the impact of COVID-19 on education, mental health, and lifestyle, and to build a network of young researchers and social impact initiatives."
+              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
+            />
+            <FeaturedArticle
+              img={blog2}
+              title="Let's Share - Market Research Coordinator"
+              time="Jan 2020 - June 2020"
+              summary="I led the content writing department and researched for social media user preferences, engagement patterns, and trending topics to guide content strategies. "
               link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
             />
           </ul>
@@ -173,7 +195,6 @@ export default function Articles() {
             <Article
               title="Adding more soon, thanks for the interest!"
               img={loading}
-              time="1 min read"
               date=""
               link="https://github.com/lilxyzz/"
             />

@@ -51,8 +51,8 @@ export default function About() {
       >
         <Layout className="pt-16">
           <AnimatedText
-            text="Let Passion Lead Your Purpose 🔥"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            text="Learning Never Stops 💡"
+            className="mb-16 !text-7xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
@@ -69,7 +69,7 @@ export default function About() {
               </p>
               <p className="my-4 font-medium">
                 Beyond academics, I’ve also participated in volunteer programs, leadership initiatives, and social impact projects, which have allowed me to develop a deeper understanding of teamwork, youth empowerment, and community engagement.
-                I’m passionate about creating meaningful experiences and building connections through events, marketing, and creative projects. My goal is to continue growing as a marketing and event professional—combining business strategy with creativity to make a positive impact wherever I work.
+                I’m passionate about creating meaningful experiences and building connections through events, marketing, and creative projects. My goal is to continue growing as a marketing and event professional — combining business strategy with creativity to make a positive impact wherever I work.
 
               </p>
             </div>
@@ -100,37 +100,37 @@ export default function About() {
             >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={1461} />+
+                  <AnimatedNumberFramerMotion value={10} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                xl:text-end md:text-lg sm:text-base xs:text-sm"
                 >
-                  Days of Coding
+                  Events & Workshops Supported
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={500} />
+                  <AnimatedNumberFramerMotion value={25} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Made
+                  Social Media Posts Designed & Published
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={499} />
+                  <AnimatedNumberFramerMotion value={5000} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Crushed
+                  Combined Social Media Reached
                 </h3>
               </div>
             </div>

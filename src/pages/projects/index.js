@@ -222,8 +222,8 @@ export default function Projects() {
       <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Transforms the World ✨"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+            text="Every Challenge is a Chance to Grow✨"
+            className="mb-16 !text-7xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
           {/* ---- Main three categories ---- */}
@@ -285,7 +285,7 @@ export default function Projects() {
                 dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
                 md:p-2 md:px-4 md:text-base"
               >
-                View Articles
+                View Experience
               </Link>
 
               <Link
