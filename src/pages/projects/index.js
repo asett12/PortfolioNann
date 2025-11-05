@@ -95,15 +95,18 @@ const FeaturedProject = ({ type, title, summary, img, link, linkedIn, tools }) =
       >
         <FramerImage
           src={img}
-          className="h-auto w-full object-cover"
           alt={title}
+          className="h-auto w-full object-cover"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          width={1200}              // ✅ required
+          height={800}              // ✅ required
           sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 33vw"
           priority
         />
+
       </Link>
 
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
@@ -155,8 +158,9 @@ const FeaturedProject = ({ type, title, summary, img, link, linkedIn, tools }) =
 const Project = ({ title, type, img, link, tools }) => {
   return (
     <article
-      className="relative flex w-full flex-col items-center justify-center rounded-2xl 
-      border border-solid border-dark bg-light p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4"
+      className="relative flex h-full w-full flex-col items-center 
+      justify-start rounded-2xl border border-solid border-dark bg-light 
+      p-6 shadow-2xl dark:border-light dark:bg-dark xs:p-4"
     >
       <div
         className="absolute top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] bg-dark
@@ -170,16 +174,20 @@ const Project = ({ title, type, img, link, tools }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="h-auto w-full"
+          className="h-auto w-full object-cover"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          width={1200}
+          height={800}
           sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 33vw"
+          priority
         />
       </Link>
 
-      <div className="mt-4 flex w-full flex-col items-start justify-between">
+      {/* make this flex-1 so it fills the remaining height */}
+      <div className="mt-4 flex w-full flex-1 flex-col items-start justify-between">
         <span className="text-xl font-medium text-primary dark:text-light lg:text-lg md:text-base">
           {type}
         </span>
@@ -193,9 +201,10 @@ const Project = ({ title, type, img, link, tools }) => {
           </h2>
         </Link>
 
+        {/* mt-auto pushes the button to the bottom of the card */}
         <Link
           href={link}
-          className="rounded-lg bg-dark mt-2 px-6 py-2 text-lg font-semibold
+          className="mt-auto rounded-lg bg-dark px-6 py-2 text-lg font-semibold
           sm:px-4 sm:text-base border-2 border-solid text-light hover:border-dark hover:bg-transparent hover:text-dark 
           dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light md:p-2 md:px-4 md:text-base"
         >
@@ -205,6 +214,7 @@ const Project = ({ title, type, img, link, tools }) => {
     </article>
   );
 };
+
 
 export default function Projects() {
   return (
@@ -232,34 +242,35 @@ export default function Projects() {
                 type="Event & Marketing"
                 tools="Sales | Event Marketing | Customer Engagement"
                 title="Event Projects"
-                img={proj1}
+                img="/images/events/it&cma/mainEvent.png"
                 date="2023"
-                link="/projects/events"          // ✅ now dynamic slug
+                link="/projects/events"          
                 linkedIn="https://www.linkedin.com/in/nanohnmarwai109/"
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type="Research & Visual Designs"
                 tools="UI/UX Designs | Innovation | Research"
                 title="Academic & Innovation Projects"
-                img={proj1}
+                img="/images/Academic/China-ASEAN/mainAcademic.png"
                 date="2023"
-                link="/projects/academic"        // ✅ dynamic slug
+                link="/projects/academic"
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type="Campaign Planning & Marketing"
                 tools="Project Management | Communication"
                 title="Marketing Campaign Projects"
-                img={proj1}
+                img="/images/MarketingCampaign/mainMarketing.png"
                 date="2023"
-                link="/projects/marketing"       // ✅ dynamic slug
+                link="/projects/marketing"
               />
             </div>
+
           </div>
 
           {/* ---- Footer section ---- */}

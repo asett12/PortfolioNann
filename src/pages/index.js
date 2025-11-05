@@ -73,36 +73,57 @@ export default function Home() {
               </div>
 
               <p className="my-4 text-base font-medium md:text-sm sm:!text-sm">
-                I'm a fresh graduate business student passionate about creating meaningful experiences through event management, marketing and creative collaboration. I enjoy bringing people together and turning ideas into reality.
+                I'm a fresh graduate business student passionate about creating meaningful
+                experiences through event management, marketing and creative collaboration.
+                I enjoy bringing people together and turning ideas into reality.
               </p>
 
-              <div className="mt-2 flex items-center self-start gap-3 grid-cols-2 lg:self-center">
+              <div className="mt-2 flex items-center self-start gap-3 lg:self-center">
                 <Link
                   href="/about/"
-                  target={"_self"}
-                  className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-             `}
+                  target="_self"
+                  className={`flex items-center rounded-lg border-2 border-solid bg-dark
+                              p-2.5 px-6 text-lg font-semibold capitalize text-light
+                              hover:border-dark hover:bg-transparent hover:text-dark
+                              dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+                              md:p-2 md:px-4 md:text-base`}
                 >
                   Get To Know Me
                 </Link>
+
                 <Link
                   href="/projects/"
-                  target={"_self"}
-                  className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
-            capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
-            dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
-            md:p-2 md:px-4 md:text-base
-             `}
+                  target="_self"
+                  className={`flex items-center rounded-lg border-2 border-solid bg-light
+                              p-2.5 px-6 text-lg font-semibold capitalize text-dark
+                              hover:border-light hover:bg-dark hover:text-light
+                              dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
+                              md:p-2 md:px-4 md:text-base`}
                 >
-                  projects
+                  Projects
+                </Link>
+
+                {/* Play icon button */}
+                <Link
+                  href="/thank-you-video"
+                  aria-label="Watch thank you video"
+                  className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-solid
+                             border-dark bg-light text-dark transition-colors duration-200
+                             hover:bg-dark hover:text-light hover:border-light
+                             dark:bg-dark dark:text-light dark:border-light
+                             dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark
+                             md:h-10 md:w-10"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor">
+                    <circle cx="12" cy="12" r="11" className="opacity-20" />
+                    <path d="M10 8l6 4-6 4V8z" />
+                  </svg>
                 </Link>
               </div>
             </div>
           </div>
         </Layout>
+
         <HireMe />
       </article>
     </>

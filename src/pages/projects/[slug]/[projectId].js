@@ -82,6 +82,12 @@ function ArrowLeftIcon({ className = "w-4 h-4" }) {
 }
 
 function GalleryCard({ src, caption }) {
+  const isVideo = src.endsWith(".mp4");
+
+  const thumbnail = isVideo
+    ? src.replace(".mp4", "-thumb.jpg")
+    : src;
+
   return (
     <div
       className="
@@ -96,8 +102,8 @@ function GalleryCard({ src, caption }) {
     >
       <a href={src} target="_blank" rel="noopener noreferrer">
         <SkeletonImage
-          src={src}
-          alt={caption || 'Gallery image'}
+          src={thumbnail}
+          alt={caption || "Gallery image"}
           width={600}
           height={400}
           className="
@@ -107,14 +113,29 @@ function GalleryCard({ src, caption }) {
           "
           containerClassName="w-full h-[260px] md:h-[300px] lg:h-[340px]"
         />
+
+        {/* play icon overlay for videos */}
+        {isVideo && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-16 h-16 text-white opacity-90"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        )}
       </a>
 
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent p-4">
         <p className="text-white text-sm md:text-base font-medium drop-shadow">
-          {caption || 'Untitled photo'}
+          {caption || "Untitled photo"}
         </p>
       </div>
     </div>
   );
 }
+
 

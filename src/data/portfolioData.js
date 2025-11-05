@@ -1,6 +1,6 @@
 import proj1 from "/public/images/projects/clay-theme.png";
 
-// 1) EVENT PROJECTS (the slider in /projects/events)
+//EVENTS
 export const EVENT_PROJECTS = [
   {
     id: "itcma",
@@ -15,7 +15,7 @@ export const EVENT_PROJECTS = [
     ],
     learning:
       "This experience deepened my understanding of event marketing, audience engagement, and cross-cultural communication. It also strengthened my teamwork and professionalism, inspiring me to pursue a career in event management and marketing.",
-    image: proj1,
+    image: "/images/events/it&cma/it&cma-7.jpg",
 
     links: [
       { href: "/projects/events/itcma", label: "Visit Demo", primary: true },
@@ -45,7 +45,7 @@ export const EVENT_PROJECTS = [
         },
         {
             src: "/images/events/it&cma/it&cma-6.jpg",
-            caption: "TTG Asia Media"
+            caption: "TTG Asia Media Booth"
         },
         {
             src: "/images/events/it&cma/it&cma-7.jpg",
@@ -66,7 +66,7 @@ export const EVENT_PROJECTS = [
     ],
     learning:
       "This experience strengthened my ability to analyze consumer behavior, communicate value, and work efficiently under pressure in a fast-paced environment — skills essential in both marketing and event management.",
-    image: proj1,
+    image: "/images/events/rsunival/rsunival-3.jpg",
     links: [
       { href: "/projects/events/rsunival", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
@@ -115,8 +115,7 @@ export const EVENT_PROJECTS = [
     ],
     learning:
       "This experience enhanced my understanding of audience targeting, experiential marketing, and campaign planning, while strengthening my communication, teamwork, and decision-making abilities in a fast-paced event setting.",
-    image: proj1,
-    // this now matches your dynamic route
+    image: "/images/events/proInStyle/pro-in-style-4.PNG",
     links: [
       { href: "/projects/events/pro-in-style", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
@@ -146,7 +145,7 @@ export const EVENT_PROJECTS = [
   },
 ];
 
-// 2) ACADEMIC / COMPETITION PROJECTS (the slider in /projects/academic)
+//ACADEMIC 
 export const ACADEMIC_PROJECTS = [
   {
     id: "china-asean",
@@ -180,19 +179,31 @@ export const ACADEMIC_PROJECTS = [
         icon: "medium",
       },
     ],
-    image: proj1,
+    image: "/images/Academic/China-ASEAN/china-asean-2.jpg",
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/China-Asean/china-asean-1.jpg",
+            caption: "Final Pitching Day"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/China-Asean/china-asean-2.jpg",
+            caption: "Group Photo"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/China-Asean/china-asean-3.jpg",
+            caption: "Group Photo"
+        },
+        {
+            src: "/images/Academic/China-Asean/china-asean-4.jpg",
+            caption: "FloodNavi Infographic"
+        },
+        {
+            src: "/images/Academic/China-Asean/china-asean-5.jpg",
+            caption: "FloodNavi Infographic"
+        },
+        {
+            src: "/images/Academic/China-Asean/china-asean-6.jpg",
+            caption: "FloodNavi Infographic"
         },
     ],
   },
@@ -226,19 +237,31 @@ export const ACADEMIC_PROJECTS = [
         icon: "medium",
       },
     ],
-    image: proj1,
+    image: "/images/Academic/TrueMoney/TrueMoney2.jpg",
     gallery: [
       {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/TrueMoney/TrueMoney1.jpg",
+            caption: "2nd Runner Up"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/TrueMoney/TrueMoney2.jpg",
+            caption: "2nd Runner Up"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/TrueMoney/TrueMoney3.jpg",
+            caption: "Group Photo"
+        },
+        {
+            src: "/images/Academic/TrueMoney/TrueMoney4.jpg",
+            caption: "Pitching"
+        },
+        {
+            src: "/images/Academic/TrueMoney/TrueMoney5.jpg",
+            caption: "Certificate"
+        },
+         {
+            src: "/images/Academic/TrueMoney/TrueMoney6.jpg",
+            caption: "Group Photo"
         },
     ],
   },
@@ -271,25 +294,29 @@ export const ACADEMIC_PROJECTS = [
         icon: "medium",
       },
     ],
-    image: proj1,
+    image: "/images/Academic/CHROMA/CHROMA1.jpg",
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/CHROMA/CHROMA1.jpg",
+            caption: "Group Photo"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/CHROMA/CHROMA2.jpg",
+            caption: "Certificate"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/Academic/CHROMA/CHROMAprototype.mp4",
+            caption: "CHROMA Prototype"
+        },
+        {
+            src: "/images/Academic/CHROMA/CHROMA_Advertisement.mp4",
+            caption: "CHROMA"
         },
     ],
   },
 ];
 
-// 3) MARKETING / EXPERIENCE PROJECTS (the slider in /projects/marketing)
+//MARKETING
 export const MARKETING_EXPERIENCES = [
   {
     id: "save4paws",
@@ -306,7 +333,7 @@ export const MARKETING_EXPERIENCES = [
     ],
     learning:
       "This experience strengthened my sales communication, teamwork, and adaptability, while deepening my ability to organize purpose-driven campaigns.",
-    image: proj1,
+    image: "/images/MarketingCampaign/Save4Paws5.jpg",
     links: [
       { href: "/projects/marketing/save4paws", label: "View Related Work", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
@@ -317,16 +344,28 @@ export const MARKETING_EXPERIENCES = [
     ],
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/MarketingCampaign/Save4Paws1.jpg",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/MarketingCampaign/Save4Paws2.jpg",
+            caption: "Menu Board"
+        },
+        {
+            src: "/images/MarketingCampaign/Save4Paws3.jpg",
+            caption: "Menu Poster"
+        },
+        {
+            src: "/images/MarketingCampaign/Save4Paws4.jpg",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/MarketingCampaign/Save4Paws5.jpg",
+            caption: "Group Photo"
+        },
+        {
+            src: "/images/MarketingCampaign/Save4Paws6.jpg",
+            caption: "Donation Receipt"
         },
     ],
   }
