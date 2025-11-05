@@ -20,12 +20,21 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           {position}{" "}
           <br/>
           <a
-            className="text-slideGreen dark:text-primaryDark"
             href={companyLink}
-            target={"_blank"}
+            target="_blank"
+            className="
+              bg-gradient-to-b from-[#7b5cff] to-[#3c2bc0]
+              dark:bg-gradient-to-b dark:from-[#3c2bc0] dark:to-[#7b5cff]
+              bg-clip-text text-transparent font-semibold
+              filter drop-shadow-[0_0_2px_#7b5cff]
+            "
           >
             @{company}
           </a>
+
+
+
+
         </h3>
         <span className="capitalize text-dark/75 font-medium dark:text-light/50 xs:text-sm">
           {time} | {address}
@@ -45,7 +54,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-64">
+    <div className="my-35">
       <h2 className="font-bold text-7xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Internship
       </h2>

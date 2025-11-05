@@ -10,7 +10,6 @@ import TransitionEffect from "@/components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";
 
 import proj1 from "/public/images/projects/clay-theme.png";
-import loading from "/public/images/articles/GTA6-VICE.gif";
 
 const FramerImage = motion(Image);
 
@@ -211,7 +210,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | Nann</title>
+        <title>Nann's Portfolio</title>
         <meta
           name="description"
           content="Explore Nann’s event, academic, and marketing projects — all showcasing creativity, strategy, and teamwork."
@@ -219,7 +218,7 @@ export default function Projects() {
       </Head>
 
       <TransitionEffect />
-      <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-light">
+      <main className="mb-5 flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Every Challenge is a Chance to Grow✨"

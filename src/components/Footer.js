@@ -17,7 +17,7 @@ const Footer = () => {
           {""}
           by&nbsp;
           <Link
-            href="https://travislord.xyz/"
+            href="https://github.com/asett12"
             className="underline underline-offset-2"
           >
             Asett

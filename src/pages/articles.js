@@ -4,7 +4,6 @@ import Head from "next/head";
 import Image from "next/image";
 import blog1 from "../../public/images/articles/Clay-Gatsby-theme.webp";
 import blog2 from "../../public/images/articles/My-MacBook-Setup-For-Development-2024.webp";
-import loading from "../../public/images/articles/GTA6-VICE.gif";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -84,7 +83,7 @@ const Article = ({ img, title, date, link }) => {
   );
 };
 
-const FeaturedArticle = ({ img, title, time, summary, link }) => {
+const FeaturedArticle = ({ img, title, time, summary }) => {
   return (
     <li
       className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
@@ -99,11 +98,6 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
          dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
         xs:rounded-[1.5rem]  "
       />
-      <Link
-        href={link}
-        target={"_blank"}
-        className="inline-block rounded-lg overflow-hidden w-full"
-      >
         <FramerImage
           src={img}
           alt={title}
@@ -113,13 +107,10 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           sizes="100vw"
           priority
         />
-      </Link>
 
-      <Link href={link} target={"_blank"}>
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 xs:text-lg cursor-pointer">
           {title}
         </h2>
-      </Link>
       <p className="text-sm  mb-2">{summary}</p>
       <span className="text-primary font-semibold dark:text-primaryDark">
         {time}
@@ -132,7 +123,7 @@ export default function Articles() {
   return (
     <>
       <Head>
-        <title>Development Articles | By NexTemp</title>
+        <title>Nann's Portfolio</title>
         <meta
           name="description"
           content="NexTemp, A open-source portfolio theme built with Nextjs"
@@ -140,7 +131,7 @@ export default function Articles() {
       </Head>
       <TransitionEffect />
       <main
-        className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
+        className={`w-full mb-5 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
       >
         <Layout className="pt-16">
           <AnimatedText
@@ -153,7 +144,6 @@ export default function Articles() {
               title="Beyond Books - Assistant Coach"
               time="June 2024 - Present"
               summary="I assist instructors in managing classroom activities and support with administrative and coordination tasks."
-              link="https://travislord.xyz/articles/guide-to-clay-theme-gatsby-web-app"
             />
 
             <FeaturedArticle
@@ -161,29 +151,24 @@ export default function Articles() {
               title="RIC Badminton Club - PR Officer"
               time="Mar 2023 - Apr 2025"
               summary="I managed the club’s social media accounts to promoted club activities and coordinated with other student clubs. "
-              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
             />
             <FeaturedArticle
               img={blog2}
               title="RIC Language Centre - Team Leader"
               time="Aug 2022 - Jan 2024"
-              summary="I supervised and assigned tasks to peer mentors and facilitated effective communication between students and mentors.
-"
-              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
+              summary="I supervised and assigned tasks to peer mentors and facilitated effective communication between students and mentors."
             />
             <FeaturedArticle
               img={blog2}
               title="Academic Initiative for Youth Club - Organizer & Co-Founder"
               time="Feb 2020 - Mar 2022"
               summary="AIFYC Club was founded with the aim to conduct research on the impact of COVID-19 on education, mental health, and lifestyle, and to build a network of young researchers and social impact initiatives."
-              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
             />
             <FeaturedArticle
               img={blog2}
               title="Let's Share - Market Research Coordinator"
               time="Jan 2020 - June 2020"
               summary="I led the content writing department and researched for social media user preferences, engagement patterns, and trending topics to guide content strategies. "
-              link="https://travislord.xyz/articles/top-macbook-setup-tips-for-2024"
             />
           </ul>
 

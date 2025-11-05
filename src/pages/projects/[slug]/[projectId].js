@@ -94,26 +94,26 @@ function GalleryCard({ src, caption }) {
         hover:-translate-y-2
       "
     >
-      <Image
-        src={src}
-        alt={caption || "Gallery image"}
-        width={600}
-        height={400}
-        className="
-          object-cover w-full
-          h-[260px] md:h-[300px] lg:h-[340px]
-          transition-transform duration-500 group-hover:scale-105
-        "
-      />
+      <a href={src} target="_blank" rel="noopener noreferrer">
+        <Image
+          src={src}
+          alt={caption || 'Gallery image'}
+          width={600}
+          height={400}
+          className="
+            object-cover w-full
+            h-[260px] md:h-[300px] lg:h-[340px]
+            transition-transform duration-500 group-hover:scale-105
+          "
+        />
+      </a>
 
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent p-4">
         <p className="text-white text-sm md:text-base font-medium drop-shadow">
-          {caption || "Untitled photo"}
-        </p>
-        <p className="text-white/70 text-[11px] uppercase tracking-wide">
-          Gallery
+          {caption || 'Untitled photo'}
         </p>
       </div>
     </div>
   );
 }
+

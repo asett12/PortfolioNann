@@ -28,16 +28,28 @@ export const EVENT_PROJECTS = [
 
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/events/it&cma/it&cma-1.jpg",
+            caption: "Name Tag"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/events/it&cma/it&cma-5.jpg",
+            caption: "Volunteer"
         },
         {
-            src: "/images/projects/clay-theme.png",
-            caption: "Booth Setup"
+            src: "/images/events/it&cma/it&cma-3.jpg",
+            caption: "Information Board"
+        },
+        {
+            src: "/images/events/it&cma/it&cma-4.jpg",
+            caption: "Marketing Team"
+        },
+        {
+            src: "/images/events/it&cma/it&cma-6.jpg",
+            caption: "TTG Asia Media"
+        },
+        {
+            src: "/images/events/it&cma/it&cma-7.jpg",
+            caption: "Group Photo"
         },
     ],
   },
@@ -65,15 +77,27 @@ export const EVENT_PROJECTS = [
     ],
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/rsunival/rsunival-2.jpg",
+            caption: "Menu Poster"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-3.jpg",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/rsunival/rsunival-8.png",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/rsunival/rsunival-5.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-6.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-7.jpg",
             caption: "Booth Setup"
         },
     ],
@@ -103,16 +127,20 @@ export const EVENT_PROJECTS = [
     ],
     gallery: [
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/proInStyle/pro-in-style-1.jpg",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/proInStyle/pro-in-style-2.jpg",
             caption: "Booth Setup"
         },
         {
-            src: "/images/projects/clay-theme.png",
+            src: "/images/events/proInStyle/pro-in-style-3.jpg",
             caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/proInStyle/pro-in-style-4.PNG",
+            caption: "Group Photo"
         },
     ],
   },
