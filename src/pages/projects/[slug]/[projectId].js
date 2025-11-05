@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
+import SkeletonImage from "@/components/SkeletonImage";
 import Link from "next/link";
 import { getProjectFromCategory } from "@/data/portfolioData";
 
@@ -95,7 +95,7 @@ function GalleryCard({ src, caption }) {
       "
     >
       <a href={src} target="_blank" rel="noopener noreferrer">
-        <Image
+        <SkeletonImage
           src={src}
           alt={caption || 'Gallery image'}
           width={600}
@@ -105,6 +105,7 @@ function GalleryCard({ src, caption }) {
             h-[260px] md:h-[300px] lg:h-[340px]
             transition-transform duration-500 group-hover:scale-105
           "
+          containerClassName="w-full h-[260px] md:h-[300px] lg:h-[340px]"
         />
       </a>
 
