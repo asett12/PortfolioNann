@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import Image from "next/image";
+import SkeletonImage from "@/components/SkeletonImage";
 import profile from "../../public/images/profile/Nann1.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
@@ -84,15 +84,17 @@ export default function About() {
                 bg-dark
         dark:bg-light  "
               />
-              <Image
+              <SkeletonImage
                 className="h-auto w-full rounded-2xl border-2 border-solid border-dark"
+                containerClassName="w-full rounded-2xl border-2 border-solid border-dark overflow-hidden"
                 priority={true}
                 src={profile}
                 alt="Travis Lord"
                 sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
+                      (max-width: 1200px) 50vw,
+                      33vw"
               />
+
             </div>
             <div
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 

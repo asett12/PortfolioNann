@@ -23,10 +23,10 @@ export default function Home() {
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        <Layout className="!pt-24 md:!pt-16 sm:!pt-28">
+        <Layout className="!pt-24 md:!pt-16 sm:!pt-10">
           <div className="flex w-full items-start justify-between md:flex-col pt-10 pb-24">
             {/* left image */}
-            <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit">
+            <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit pb-10">
               <div
                 className="relative h-[450px] w-[450px] overflow-hidden rounded-2xl shadow-xl 
                           hover:shadow-2xl transition-all duration-500 ease-out transform 

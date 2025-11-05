@@ -5,11 +5,10 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 import { PROJECT_CATEGORIES } from "@/data/portfolioData";
-import Image from "next/image";
+import SkeletonImage from "@/components/SkeletonImage";
 import Link from "next/link";
-import { GithubIcon, DevIcon, LinkedInIcon, MediumIcon } from "@/components/Icons";
+import { LinkedInIcon, MediumIcon } from "@/components/Icons";
 
-// small inline icon for the back button
 function ArrowLeftIcon({ className = "w-4 h-4" }) {
   return (
     <svg
@@ -26,7 +25,6 @@ function ArrowLeftIcon({ className = "w-4 h-4" }) {
   );
 }
 
-// 1) Single slide
 function Slide({ item, slug }) {
   return (
     <section
@@ -36,7 +34,6 @@ function Slide({ item, slug }) {
         md:flex-col
       "
     >
-      {/* IMAGE RIGHT (desktop) / TOP (mobile) */}
       <div
         className="
           flex-[0_0_360px] max-w-[420px] relative
@@ -46,17 +43,17 @@ function Slide({ item, slug }) {
         "
       >
         <div className="pointer-events-none absolute top-0 -left-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-bl-3xl bg-dark dark:bg-light" />
-        <Image
+        <SkeletonImage
           src={item.image}
           alt={item.title}
           className="h-auto w-full rounded-2xl object-cover"
           sizes="(min-width: 1024px) 30vw, 400px"
           width={800}
           height={500}
+          containerClassName="w-full rounded-2xl overflow-hidden"
         />
       </div>
 
-      {/* TEXT LEFT (desktop) / BELOW (mobile) */}
       <article className="flex-1 flex flex-col gap-3 min-w-[280px] md:w-full">
         <h2 className="text-2xl font-bold text-dark/80 dark:text-light/80 md:text-xl">
           {item.headline || item.title}
@@ -152,7 +149,6 @@ function Slide({ item, slug }) {
   );
 }
 
-// 2) Slider (FIXED CONTROLS)
 function Slider({ items, slug }) {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -180,9 +176,7 @@ function Slider({ items, slug }) {
   }, [goNext, goPrev]);
 
   return (
-    // pb-16 = reserve space for absolutely positioned controls
     <div className="relative w-full pb-10">
-      {/* fixed height-ish slide area so layout doesn’t jump */}
       <div className="relative min-h-[520px] md:min-h-[580px]">
         <div className="relative flex items-center justify-center h-full">
           <AnimatePresence custom={direction} mode="popLayout">
@@ -201,7 +195,6 @@ function Slider({ items, slug }) {
         </div>
       </div>
 
-      {/* controls: now ABSOLUTE, so they don't move */}
       <div
         className="
           absolute bottom-10 md:bottom-[-20px] left-0 right-0
@@ -250,7 +243,6 @@ function Slider({ items, slug }) {
   );
 }
 
-// 3) Page
 export default function ProjectCategoryPage({ category, slug }) {
   if (!category) return <p>Category not found.</p>;
 
@@ -262,7 +254,6 @@ export default function ProjectCategoryPage({ category, slug }) {
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-[30px]">
-          {/* Back to Projects button */}
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 mb-6 text-dark dark:text-light 
