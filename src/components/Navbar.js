@@ -126,7 +126,7 @@ const Navbar = () => {
           <motion.a
             target="_blank"
             className="w-7 mx-3 bg-light rounded-full"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Send email to me"
