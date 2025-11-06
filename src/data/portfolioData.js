@@ -186,23 +186,23 @@ export const ACADEMIC_PROJECTS = [
             caption: "Final Pitching Day"
         },
         {
-            src: "/images/Academic/China-Asean/china-asean-2.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-2.jpg",
             caption: "Group Photo"
         },
         {
-            src: "/images/Academic/China-Asean/china-asean-3.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-3.jpg",
             caption: "Group Photo"
         },
         {
-            src: "/images/Academic/China-Asean/china-asean-4.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-4.jpg",
             caption: "FloodNavi Infographic"
         },
         {
-            src: "/images/Academic/China-Asean/china-asean-5.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-5.jpg",
             caption: "FloodNavi Infographic"
         },
         {
-            src: "/images/Academic/China-Asean/china-asean-6.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-6.jpg",
             caption: "FloodNavi Infographic"
         },
     ],

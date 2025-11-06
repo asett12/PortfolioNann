@@ -59,7 +59,7 @@ export default function Contact() {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Begin Today, I'm One Message Away 👋"
+            text="Drop Me a Message Anytime👋🏻"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 

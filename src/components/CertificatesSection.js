@@ -50,7 +50,7 @@ export default function CertificatesSection() {
         id="certificates-heading"
         className={`${montserrat.className} font-bold text-7xl mb-14 w-full text-center md:text-6xl xs:text-4xl md:mb-16 text-dark dark:text-light`}
       >
-        Recommendation Letter
+        Recommendation Letters
       </h2>
 
       {/* Grid of certificates */}

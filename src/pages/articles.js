@@ -156,7 +156,7 @@ export default function Articles() {
             />
 
             <FeaturedArticle
-              img="/images/Experiences/TeamLeader.jpg"
+              img="/images/Experiences/TeamLeader.png"
               title="RIC Language Centre - Team Leader"
               time="Aug 2022 - Jan 2024"
               summary="I supervised and assigned tasks to peer mentors and facilitated effective communication between students and mentors."
