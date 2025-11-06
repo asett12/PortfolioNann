@@ -21,7 +21,7 @@ export const EVENT_PROJECTS = [
       { href: "/projects/events/itcma", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
@@ -71,7 +71,7 @@ export const EVENT_PROJECTS = [
       { href: "/projects/events/rsunival", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
@@ -114,13 +114,13 @@ export const EVENT_PROJECTS = [
       "Helped design a visually appealing booth and campaign visuals to attract attendees.",
     ],
     learning:
-      "This experience enhanced my understanding of audience targeting, experiential marketing, and campaign planning, while strengthening my communication, teamwork, and decision-making abilities in a fast-paced event setting.",
+      "This experience improved my understanding of audience targeting, experiential marketing, and campaign planning, while strengthening my communication, teamwork, and decision-making abilities in a fast-paced event setting.",
     image: "/images/events/proInStyle/pro-in-style-4.PNG",
     links: [
       { href: "/projects/events/pro-in-style", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
@@ -156,11 +156,12 @@ export const ACADEMIC_PROJECTS = [
     body: `
 <b>Competition:</b> China-ASEAN Innovation Quest 2025
 (Sunway University, Malaysia)
-
+<br/>
 <b>Team:</b> InnoTrio (Rangsit University)
-
+<br/>
 <b>Achievement:</b> Top 14 out of 58 Teams
-
+<br/>
+<br/>
 <b>Concept:</b> FloodNavi is an AI-powered flood alert and assistance platform designed to help communities in Southeast Asia prepare for and respond to floods. It integrates real-time data, community reporting, disaster resource hub and offline functionality to provide life-saving alerts even in low-connectivity areas.
     `.trim(),
     role: `
@@ -175,14 +176,14 @@ export const ACADEMIC_PROJECTS = [
       { href: "/projects/academic/china-asean", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
     image: "/images/Academic/China-ASEAN/china-asean-2.jpg",
     gallery: [
         {
-            src: "/images/Academic/China-Asean/china-asean-1.jpg",
+            src: "/images/Academic/China-ASEAN/china-asean-1.jpg",
             caption: "Final Pitching Day"
         },
         {
@@ -216,9 +217,10 @@ export const ACADEMIC_PROJECTS = [
     body: `
 <b>Competition:</b> Rangsit Business Pitch Competition EP.1 (2024)
 (Rangsit University, Thailand)
-
+<br/>
 <b>Achievement:</b> 2nd Runner-Up
-
+<br/>
+<br/>
 <b>Concept:</b> Reimagined TrueMoney Wallet for students with Smart Budgeting Tools, Campus Updates, GPS-Based Recommendations, Weather/Location widgets, and Inclusive Access for international students.
     `.trim(),
     role: `
@@ -233,7 +235,7 @@ export const ACADEMIC_PROJECTS = [
       { href: "/projects/academic/rsu-pitch", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
@@ -272,9 +274,9 @@ export const ACADEMIC_PROJECTS = [
     tag: "UI/UX Designs | Innovation",
     body: `
 <b>Competition:</b> L’Oréal Brandstorm Competition (2024)
-
+<br/><br/>
 <b>Objective:</b> Design a tech-driven, sustainable hair-coloring solution for the Professional Products Division.
-
+<br/><br/>
 <b>Concept:</b> CHROMA is a smart hybrid coloring kit that personalizes hair color through AI analysis, offering vibrant results while protecting hair health and the planet.
     `.trim(),
     role: `
@@ -290,7 +292,7 @@ export const ACADEMIC_PROJECTS = [
       { href: "/projects/academic/loreal", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
@@ -338,7 +340,7 @@ export const MARKETING_EXPERIENCES = [
       { href: "/projects/marketing/save4paws", label: "View Related Work", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail109.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
