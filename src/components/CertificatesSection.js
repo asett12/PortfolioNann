@@ -12,24 +12,28 @@ const montserrat = Montserrat({
 
 const CERTIFICATES = [
   {
-    id: "rec-letter",
-    title: "Recommendation Letter – Internship",
-    issuer: "Sprouting Tech Co., Ltd.",
-    date: "2025",
+    id: "rec-letter-1",
+    title: "Let's Share – Volunteer",
+    issuer: "From: May Twetar Kyaw, Founder of Let's Share",
+    quote:
+      "“What drew my attention to Nann was her active participation in social skill improvement projects and academic work.” — Let's Share Foundation",
+    date: "2021",
     type: "Recommendation Letter",
     description:
-      "A professional recommendation letter highlighting my performance, growth, and contributions during my front-end development internship.",
+      "A professional recommendation letter highlighting my performance, growth, and contributions during my volunteer experience.",
     href: "/docs/recommendation-letter.pdf",
   },
   {
-    id: "rec-letter",
-    title: "Recommendation Letter – Internship",
-    issuer: "Sprouting Tech Co., Ltd.",
+    id: "rec-letter-2",
+    title: "ME GOODY Space – Internship",
+    issuer: "From: Cin Ye, CEO of Buddy Up Co., Ltd.",
+    quote:
+      "“Nann consistently demonstrated dedication, professionalism, and a remarkable attitude towards learning and growth.” — Buddy Up Co., Ltd.",
     date: "2025",
     type: "Recommendation Letter",
     description:
       "A professional recommendation letter highlighting my performance, growth, and contributions during my front-end development internship.",
-    href: "/docs/recommendation-letter.pdf",
+    href: "/docs/recommendation-letter-2.pdf",
   },
 ];
 
@@ -46,7 +50,7 @@ export default function CertificatesSection() {
         id="certificates-heading"
         className={`${montserrat.className} font-bold text-7xl mb-14 w-full text-center md:text-6xl xs:text-4xl md:mb-16 text-dark dark:text-light`}
       >
-        Certificates
+        Recommendation Letter
       </h2>
 
       {/* Grid of certificates */}
@@ -91,10 +95,17 @@ export default function CertificatesSection() {
               <p className="mt-1 text-sm font-medium text-dark/70 dark:text-light/70">
                 {cert.issuer}
               </p>
+
+              {/* Quote / Sentence */}
+              {cert.quote && (
+                <p className="mt-3 text-[15px] italic text-dark/80 dark:text-light/80 leading-snug">
+                  {cert.quote}
+                </p>
+              )}
             </div>
 
             {/* View PDF button */}
-            <div className="mt-4 flex items-center justify-between">
+            <div className="mt-5 flex items-center justify-between">
               <a
                 href={cert.href}
                 target="_blank"

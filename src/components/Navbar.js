@@ -146,17 +146,6 @@ const Navbar = () => {
             <DownloadIcon />
           </motion.a>
 
-          <motion.a
-            target="_blank"
-            className="w-7 mx-3"
-            href="https://dev.to/lilxyzz"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="My Dev.to profile"
-          >
-            {/* If you have a DevIcon, you can put it here */}
-            {/* <DevIcon /> */}
-          </motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -246,18 +235,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="Download my resume"
             >
-              CV
-            </motion.a>
-
-            <motion.a
-              target="_blank"
-              className="w-6 mx-3"
-              href="https://dev.to/lilxyzz"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              aria-label="My Dev.to profile"
-            >
-              {/* <DevIcon /> */}
+              <DownloadIcon />
             </motion.a>
 
             <button
@@ -276,10 +254,6 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      {/* Center logo */}
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
-      </div>
     </header>
   );
 };
