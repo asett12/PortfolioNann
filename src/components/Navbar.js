@@ -4,8 +4,7 @@ import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
   MediumIcon,
-  DevIcon,
-  GithubIcon,
+  DownloadIcon,
   LinkedInIcon,
   MoonIcon,
   SunIcon,
@@ -19,17 +18,16 @@ const CustomLink = ({ href, title, className = "" }) => {
   return (
     <Link
       href={href}
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
     >
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
-              `}
+          inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5 
+          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+          ${router.asPath === href ? "w-full" : "w-0"}
+          lg:bg-light lg:dark:bg-dark
+        `}
       >
         &nbsp;
       </span>
@@ -47,18 +45,17 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
   return (
     <button
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
       onClick={handleClick}
     >
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
-              group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-              ${
-                router.asPath === href ? "w-full" : " w-0"
-              } lg:bg-light lg:dark:bg-dark
-              `}
+          inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5 
+          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+          ${router.asPath === href ? "w-full" : "w-0"}
+          lg:bg-light lg:dark:bg-dark
+        `}
       >
         &nbsp;
       </span>
@@ -77,12 +74,12 @@ const Navbar = () => {
   return (
     <header
       className="w-full flex items-center justify-between px-32 pt-10 pb-8 font-medium dark:text-light
-    lg:px-16 relative z-1 md:px-12 sm:px-8
-    "
+      lg:px-16 relative z-1 md:px-12 sm:px-8"
     >
+      {/* Mobile menu button */}
       <button
         type="button"
-        className=" flex-col items-center justify-center hidden lg:flex z-9"
+        className="flex-col items-center justify-center hidden lg:flex z-9"
         aria-controls="mobile-menu"
         aria-expanded={isOpen}
         onClick={handleClick}
@@ -105,6 +102,7 @@ const Navbar = () => {
         ></span>
       </button>
 
+      {/* Desktop nav */}
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav className="flex items-center justify-center">
           <CustomLink className="mr-4" href="/" title="Home" />
@@ -112,46 +110,58 @@ const Navbar = () => {
           <CustomLink className="mx-4" href="/projects" title="Projects" />
           <CustomLink className="ml-4" href="/articles" title="Experience" />
         </nav>
-        <nav
-          className="flex items-center justify-center flex-wrap lg:mt-2
-      "
-        >
+
+        <nav className="flex items-center justify-center flex-wrap lg:mt-2">
           <motion.a
-            target={"_blank"}
+            target="_blank"
             className="w-7 mr-3"
             href="https://www.linkedin.com/in/nanohnmarwai109/"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Checkout my GitHub profile"
+            aria-label="Checkout my LinkedIn profile"
           >
             <LinkedInIcon />
           </motion.a>
 
           <motion.a
-            target={"_blank"}
+            target="_blank"
             className="w-7 mx-3 bg-light rounded-full"
             href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            aria-label="Send Email To Me"
+            aria-label="Send email to me"
           >
             <MediumIcon />
           </motion.a>
 
+          {/* CV download button (desktop) */}
           <motion.a
-            target={"_blank"}
+            href="/docs/Nann-Ohnmar-Wai-Resume.pdf"
+            download
+            className="w-7 mx-3 bg-light rounded-full flex items-center justify-center text-[10px] font-semibold"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Download my resume"
+          >
+            <DownloadIcon />
+          </motion.a>
+
+          <motion.a
+            target="_blank"
             className="w-7 mx-3"
             href="https://dev.to/lilxyzz"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="My Dev.to profile"
-          ></motion.a>
+          >
+            {/* If you have a DevIcon, you can put it here */}
+            {/* <DevIcon /> */}
+          </motion.a>
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`w-7 h-7 ease ml-3 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
-            `}
+              ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
             aria-label="theme-switcher"
           >
             {mode === "light" ? (
@@ -162,12 +172,12 @@ const Navbar = () => {
           </button>
         </nav>
       </div>
+
+      {/* Mobile overlay menu */}
       {isOpen ? (
         <motion.div
           className="min-w-[70vw] sm:min-w-[90vw] h-[75vh] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
-      -translate-y-1/2
-      py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md
-      "
+          -translate-y-1/2 py-32 bg-dark/90 dark:bg-light/75 rounded-lg z-50 backdrop-blur-md"
           initial={{ scale: 0, x: "-50%", y: "-50%", opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
         >
@@ -203,12 +213,10 @@ const Navbar = () => {
               title="Contact"
             />
           </nav>
-          <nav
-            className="flex items-center justify-center  mt-2
-      "
-          >
+
+          <nav className="flex items-center justify-center mt-2">
             <motion.a
-              target={"_blank"}
+              target="_blank"
               className="w-6 mr-3"
               href="https://www.linkedin.com/in/nanohnmarwai109/"
               whileHover={{ y: -2 }}
@@ -219,30 +227,43 @@ const Navbar = () => {
             </motion.a>
 
             <motion.a
-              target={"_blank"}
+              target="_blank"
               className="w-7 mx-3 bg-light rounded-full"
               href="https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Send Email To Me"
+              aria-label="Send email to me"
             >
               <MediumIcon />
             </motion.a>
 
+            {/* CV download button (mobile) */}
             <motion.a
-              target={"_blank"}
+              href="/docs/Nann-Ohnmar-Wai-Resume.pdf"
+              download
+              className="w-7 mx-3 bg-light rounded-full flex items-center justify-center text-[10px] font-semibold"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Download my resume"
+            >
+              CV
+            </motion.a>
+
+            <motion.a
+              target="_blank"
               className="w-6 mx-3"
               href="https://dev.to/lilxyzz"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="My Dev.to profile"
-            ></motion.a>
+            >
+              {/* <DevIcon /> */}
+            </motion.a>
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
-            ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
-            `}
+                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
               aria-label="theme-switcher"
             >
               {mode === "light" ? (
@@ -255,7 +276,8 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
+      {/* Center logo */}
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
       </div>
     </header>

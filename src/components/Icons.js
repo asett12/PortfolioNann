@@ -553,3 +553,53 @@ export const DevIcon = ({ className, ...rest }) => (
     </g>
   </svg>
 );
+
+export const DownloadIcon = ({ className, ...rest }) => (
+  <svg
+    viewBox="-2.4 -2.4 28.80 28.80"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <rect
+        x="-2.4"
+        y="-2.4"
+        width="28.80"
+        height="28.80"
+        rx="14.4"
+        fill="#f5f5f5"
+        strokewidth="0"
+      ></rect>
+    </g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M12 6v8"
+        stroke="#000000"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 11.5L12 14.5L15 11.5"
+        stroke="#000000"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M7 17h10"
+        stroke="#000000"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+  </svg>
+);
+

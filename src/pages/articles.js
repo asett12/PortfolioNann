@@ -2,8 +2,6 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import blog1 from "../../public/images/articles/Clay-Gatsby-theme.webp";
-import blog2 from "../../public/images/articles/My-MacBook-Setup-For-Development-2024.webp";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -19,21 +17,24 @@ const MovingImg = ({ title, img, link }) => {
   const imgRef = useRef(null);
 
   function handleMouse(event) {
+    if (!imgRef.current) return;
     imgRef.current.style.display = "inline-block";
     x.set(event.pageX);
     y.set(-10);
   }
 
-  function handleMouseLeave(event) {
+  function handleMouseLeave() {
+    if (!imgRef.current) return;
     imgRef.current.style.display = "none";
     x.set(0);
     y.set(0);
   }
+
   return (
     <>
       <Link
         href={link}
-        target={"_blank"}
+        target="_blank"
         className="relative"
         onMouseMove={handleMouse}
         onMouseLeave={handleMouseLeave}
@@ -48,13 +49,14 @@ const MovingImg = ({ title, img, link }) => {
           className="w-96 h-auto z-10 hidden absolute rounded-lg md:!hidden"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
-          style={{
-            x: x,
-            y: y,
-          }}
-          sizes="(max-width: 768px) 60vw,
-              (max-width: 1200px) 40vw,
-              33vw"
+          style={{ x, y }}
+          width={400}
+          height={250}
+          sizes="
+            (max-width: 768px) 60vw,
+            (max-width: 1200px) 40vw,
+            33vw
+          "
         />
       </Link>
     </>
@@ -69,8 +71,7 @@ const Article = ({ img, title, date, link }) => {
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-2 rounded-xl flex sm:flex-col justify-between 
       bg-light text-dark first:mt-0 border border-solid border-dark
-      border-r-4 border-b-4 dark:bg-dark dark:border-light
-      "
+      border-r-4 border-b-4 dark:bg-dark dark:border-light"
     >
       <MovingImg img={img} title={title} link={link} />
       <span
@@ -90,28 +91,30 @@ const FeaturedArticle = ({ img, title, time, summary }) => {
     dark:bg-dark dark:border-light"
     >
       <div
-        className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
-        -z-10  "
+        className="absolute top-0 -right-3 w-[102%] h-[103%] rounded-[2rem] rounded-br-3xl bg-dark 
+        -z-10"
       />
       <div
-        className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark
-         dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
-        xs:rounded-[1.5rem]  "
+        className="absolute top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark
+         dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
-        <FramerImage
-          src={img}
-          alt={title}
-          className="w-full max-h-80 object-cover"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-          sizes="100vw"
-          priority
-        />
 
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 xs:text-lg cursor-pointer">
-          {title}
-        </h2>
-      <p className="text-sm  mb-2">{summary}</p>
+      <FramerImage
+        src={img}
+        alt={title}
+        className="w-full max-h-80 object-cover rounded-2xl"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.2 }}
+        width={1200}
+        height={800}
+        sizes="100vw"
+        priority
+      />
+
+      <h2 className="capitalize text-2xl font-bold my-2 mt-4 xs:text-lg cursor-pointer">
+        {title}
+      </h2>
+      <p className="text-sm mb-2">{summary}</p>
       <span className="text-primary font-semibold dark:text-primaryDark">
         {time}
       </span>
@@ -123,85 +126,84 @@ export default function Articles() {
   return (
     <>
       <Head>
-        <title>Nann's Portfolio</title>
+        <title>Nann&apos;s Portfolio</title>
         <meta
           name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
+          content="NexTemp, an open-source portfolio theme built with Next.js"
         />
       </Head>
       <TransitionEffect />
-      <main
-        className={`w-full mb-5 flex flex-col items-center justify-center dark:text-light overflow-hidden`}
-      >
+      <main className="w-full mb-5 flex flex-col items-center justify-center dark:text-light overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText
             text="Creating Experiences that connect and inspire 💭"
             className="!text-7xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
+
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
-              img={blog1}
+              img="/images/Experiences/BeyondBooks.jpg"
               title="Beyond Books - Assistant Coach"
               time="June 2024 - Present"
               summary="I assist instructors in managing classroom activities and support with administrative and coordination tasks."
             />
 
             <FeaturedArticle
-              img={blog2}
+              img="/images/Experiences/RICbadminton.jpg"
               title="RIC Badminton Club - PR Officer"
               time="Mar 2023 - Apr 2025"
-              summary="I managed the club’s social media accounts to promoted club activities and coordinated with other student clubs. "
+              summary="I managed the club’s social media accounts to promote club activities and coordinated with other student clubs."
             />
+
             <FeaturedArticle
-              img={blog2}
+              img="/images/Experiences/TeamLeader.jpg"
               title="RIC Language Centre - Team Leader"
               time="Aug 2022 - Jan 2024"
               summary="I supervised and assigned tasks to peer mentors and facilitated effective communication between students and mentors."
             />
+
             <FeaturedArticle
-              img={blog2}
+              img="/images/Experiences/AIFYC.jpg"
               title="Academic Initiative for Youth Club - Organizer & Co-Founder"
               time="Feb 2020 - Mar 2022"
-              summary="AIFYC Club was founded with the aim to conduct research on the impact of COVID-19 on education, mental health, and lifestyle, and to build a network of young researchers and social impact initiatives."
+              summary="AIFYC Club was founded to research the impact of COVID-19 on education, mental health, and lifestyle, and to build a network of young researchers and social impact initiatives."
             />
+
             <FeaturedArticle
-              img={blog2}
+              img="/images/Experiences/Let'sShare.jpg"
               title="Let's Share - Market Research Coordinator"
               time="Jan 2020 - June 2020"
-              summary="I led the content writing department and researched for social media user preferences, engagement patterns, and trending topics to guide content strategies. "
+              summary="I led the content writing department and researched user preferences, engagement patterns, and trending topics to guide social media content strategies."
             />
           </ul>
 
-          <ul className="mt-20">
-          </ul>
+          {/* reserved for future article list */}
+          <ul className="mt-20" />
+          <ul className="flex flex-col items-center relative" />
 
-          <ul className="flex flex-col items-center relative">
-          </ul>
-
-          <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
+          <div className="mt-2 flex items-center justify-between gap-3">
             <Link
               href="/about/"
-              target={"_self"}
-              className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
+              target="_self"
+              className="flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
             capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
             dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
-            md:p-2 md:px-4 md:text-base
-             `}
+            md:p-2 md:px-4 md:text-base"
             >
               Get To Know Me
             </Link>
             <Link
               href="/projects/"
-              target={"_self"}
-              className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
+              target="_self"
+              className="flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-             `}
+            md:p-2 md:px-4 md:text-base"
             >
               View Projects
             </Link>
           </div>
+
           <HireMe2 />
         </Layout>
       </main>

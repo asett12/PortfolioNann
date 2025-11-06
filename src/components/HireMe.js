@@ -9,7 +9,7 @@ export const HireMe = () => {
       className="fixed left-4 bottom-4 flex flex-col items-center justify-center md:right-8 sm:right-0 
     overflow-hidden md:bottom-auto md:left-auto md:top-0 md:absolute"
     >
-      <div className="HireMe w-full h-full flex items-center justify-center md:w-24">
+      <div className="HireMe w-full h-full flex items-center justify-center">
         <Image
           priority={false}
           src={CText}

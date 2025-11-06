@@ -2,7 +2,7 @@ import AnimatedText from "@/components/AnimatedText";
 import { HireMe } from "@/components/HireMe";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import Image from "next/image";
+import SkeletonImage from "@/components/SkeletonImage";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/images/profile/Nann.png";
@@ -29,11 +29,12 @@ export default function Home() {
             <div className="w-1/2 lg:hidden md:flex flex self-center max-h-fit pb-10">
               <div
                 className="relative h-[450px] w-[450px] overflow-hidden rounded-2xl shadow-xl 
-                          hover:shadow-2xl transition-all duration-500 ease-out transform 
-                          hover:-translate-y-2 hover:scale-[1.02] border border-gray-700/20 
-                          bg-gradient-to-b from-gray-900/40 to-gray-800/10 backdrop-blur-sm"
+                            hover:shadow-2xl transition-all duration-500 ease-out transform 
+                            hover:-translate-y-2 hover:scale-[1.02] border border-gray-700/20 
+                            bg-gradient-to-b from-gray-900/40 to-gray-800/10 backdrop-blur-sm"
               >
-                <Image
+                <SkeletonImage
+                  containerClassName="h-full w-full"   // 🔴 important
                   priority
                   src={profilePic}
                   alt="image"
@@ -43,6 +44,7 @@ export default function Home() {
                 />
               </div>
             </div>
+
 
 
 
@@ -56,7 +58,7 @@ export default function Home() {
               {/* typewriter section */}
               <div className="flex w-full items-start lg:w-full lg:justify-center sm:justify-center md:text-center md:inline-block">
                 <h2
-                  className="animate-text bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent font-semibold capitalize
+                  className="animate-text md:w-[340px] bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent font-semibold capitalize
                   !text-5xl xl:!text-4xl lg:!text-4xl md:!text-5xl sm:!text-3xl"
                 >
                   <TypewriterText
@@ -88,7 +90,7 @@ export default function Home() {
                               dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
                               md:p-2 md:px-4 md:text-base`}
                 >
-                  Get To Know Me
+                  About Me
                 </Link>
 
                 <Link

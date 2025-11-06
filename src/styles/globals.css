@@ -20,3 +20,7 @@ textarea:focus, input:focus {outline: none;}
 
 /* Projects and Articles image border black*/
 img.h-auto.w-full {border: 2px solid black; border-radius: 10px;}
+
+html {
+  scroll-behavior: smooth;
+}
