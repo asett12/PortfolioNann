@@ -42,7 +42,7 @@ export default function ProjectGalleryPage() {
 
 
       {/* Gallery */}
-      <div className="mx-auto max-w-6xl px-4 md:px-0 pb-16">
+      <div className="mx-auto max-w-6xl px-4 md:px-4 pb-16">
         {gallery.length === 0 ? (
           <p className="text-center text-slate-300 dark:text-slate-500 text-sm">
             (No gallery images found for this project.)

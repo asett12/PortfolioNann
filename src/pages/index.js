@@ -56,7 +56,7 @@ export default function Home() {
               {/* typewriter section */}
               <div className="flex w-full items-start lg:w-full lg:justify-center sm:justify-center md:text-center md:inline-block">
                 <h2
-                  className="animate-text bg-gradient-to-r from-lightGreen via-lightGreen to-slideGreen bg-clip-text text-transparent font-semibold capitalize
+                  className="animate-text bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent font-semibold capitalize
                   !text-5xl xl:!text-4xl lg:!text-4xl md:!text-5xl sm:!text-3xl"
                 >
                   <TypewriterText

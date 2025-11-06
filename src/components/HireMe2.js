@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import CText from "../../public/images/CircularText.png";
+import CText from "../../public/images/CircularText1.png";
 
 export const HireMe2 = () => {
   return (
@@ -14,8 +14,8 @@ export const HireMe2 = () => {
           priority={false}
           src={CText}
           alt="HireMe image"
-          height={160}
-          width={110}
+          height={200}
+          width={150}
           className={"fill-dark dark:fill-light animate-spin-slow duration-200"}
         />
 
