@@ -113,7 +113,9 @@ const FeaturedProject = ({ type, title, summary, img, link, linkedIn, tools }) =
         <span className="text-xl font-medium text-primary dark:text-light xs:text-base">
           {type}
         </span>
-        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">
+        <span
+          className="text-xl font-medium bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent xs:text-base"
+        >
           {tools}
         </span>
 
@@ -191,9 +193,12 @@ const Project = ({ title, type, img, link, tools }) => {
         <span className="text-xl font-medium text-primary dark:text-light lg:text-lg md:text-base">
           {type}
         </span>
-        <span className="text-xl font-medium text-primaryDark dark:text-primaryDark xs:text-base">
+        <span
+          className="text-xl font-medium bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent xs:text-base"
+        >
           {tools}
         </span>
+
 
         <Link href={link} className="underline-offset-2 hover:underline">
           <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">

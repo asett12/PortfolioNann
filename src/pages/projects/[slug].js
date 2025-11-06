@@ -60,10 +60,13 @@ function Slide({ item, slug }) {
         </h2>
 
         {item.tag ? (
-          <p className="text-sm font-semibold text-lightGreen dark:text-primaryDark">
+          <p
+            className="text-sm font-semibold bg-gradient-to-r from-[#3c2bc0] to-[#7b5cff] bg-clip-text text-transparent"
+          >
             {item.tag}
           </p>
         ) : null}
+
 
         {item.overview ? (
           <p className="text-sm leading-relaxed text-dark/80 dark:text-light/80">
@@ -256,13 +259,17 @@ export default function ProjectCategoryPage({ category, slug }) {
         <Layout className="pt-[30px]">
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 mb-6 text-dark dark:text-light 
-                       hover:text-lightGreen dark:hover:text-primaryDark hover:underline
-                       transition-all duration-200"
+            className="inline-flex items-center gap-2 mb-6 
+                      text-dark dark:text-light 
+                      hover:text-[#3c2bc0] dark:hover:text-[#7b5cff] 
+                      transition-all duration-200"
           >
             <ArrowLeftIcon className="w-4 h-4" />
             Back to Projects
           </Link>
+
+
+
 
           <AnimatedText
             text={category.title}

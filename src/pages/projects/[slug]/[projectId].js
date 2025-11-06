@@ -17,13 +17,15 @@ export default function ProjectGalleryPage() {
       <div className="pl-40 pt-[30px]">
         <Link
           href={`/projects/${slug}`}
-          className="inline-flex items-center gap-2 mb-6 text-dark dark:text-light 
-                      hover:text-lightGreen dark:hover:text-primaryDark hover:underline
-                      transition-all duration-200"
+          className="inline-flex items-center gap-2 mb-6 
+                    text-dark dark:text-light 
+                    hover:text-[#3c2bc0] dark:hover:text-[#7b5cff] 
+                    transition-all duration-200"
         >
           <ArrowLeftIcon className="w-4 h-4" />
           Back to Projects
         </Link>
+
       </div>
 
         {/* Header */}
