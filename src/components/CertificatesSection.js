@@ -21,7 +21,7 @@ const CERTIFICATES = [
     type: "Recommendation Letter",
     description:
       "A professional recommendation letter highlighting my performance, growth, and contributions during my volunteer experience.",
-    href: "/docs/recommendation-letter.pdf",
+    href: "/docs/Recommendation-Letter.pdf",
   },
   {
     id: "rec-letter-2",
@@ -33,7 +33,19 @@ const CERTIFICATES = [
     type: "Recommendation Letter",
     description:
       "A professional recommendation letter highlighting my performance, growth, and contributions during my front-end development internship.",
-    href: "/docs/recommendation-letter-2.pdf",
+    href: "/docs/Recommendation-Letter-2.pdf",
+  },
+  {
+    id: "rec-letter-3",
+    title: "Rangsit University - Student",
+    issuer: "From: Amporn Puapradit, Associate Dean for Academic and International Affairs",
+    quote:
+      "“Nann had shown communicative and analytical thinking skills and successfully demonstrated competences in the various activities.” — Rangsit University",
+    date: "2025",
+    type: "Recommendation Letter",
+    description:
+      "A professional recommendation letter highlighting my performance, growth, and contributions during my front-end development internship.",
+    href: "/docs/6504264-NAN OHMAR WAI.pdf",
   },
 ];
 
