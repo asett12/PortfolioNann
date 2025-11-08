@@ -1,74 +1,66 @@
-# NexTemp | A Next.js Personal Web App
+# 🌐 PortfolioNann
 
-![NexTemp - A Next.js Personal Web App](https://github.com/lilxyzz/nextemp/blob/main/public/NexTemp-cover.png)
-
-NexTemp - A bespoke **template** for your **next** web project. NexTemp is a personal portfolio and blog theme built around Next.js. It features a modern, clean, and responsive design, perfect for developers or anyone looking to showcase their work and ideas. For more themes and updates, stay tuned.
-
-## 📚 Tech Stack
-Next.js 14+
-React 18+
-Tailwind CSS 3+
-Framer Motion 11+
+A modern and responsive personal portfolio website built with **Next.js, Tailwind CSS, and Framer Motion**, designed to showcase the academic achievements, internship experiences, and creative projects of **Nann**, a B.B.A. International Business student
+This portfolio serves as her professional showcase platform for future career opportunities and digital presence.
 
 ## ✨ Features
-- Dark and light color mode 
-- Reusable Components
-- Blog post creation
-- Animations with Framer Motion
-- Tailwind CSS integration
-- Mobile-first responsive layout
-- Sitemap support
-- 95+ Lighthouse
 
-## 🚀 NexTemp Pro Coming Soon
-**Features**
-- SEO optimised 
-- Post tags and categories
-- Integration with Hashnode CMS for easy post publishing
-- PWA support
-  
+- ⚡ **Modern UI/UX** : Built with a clean, animated interface optimized for performance and accessibility  
+- 📱 **Responsive layout** : Fully adaptive across desktop, tablet, and mobile screens  
+- 🧠 **Dynamic sections** : Components such as Education Timeline, Experience Cards, Certificates Section, and Project Galleries  
+- 🎬 **Smooth animations** : Powered by Framer Motion for subtle yet elegant motion effects  
+- 📂 **Data-driven content** : Centralized project and certificate data for easy updates  
+- 🌙 **Dark/Light mode support** : Automatic theme switching with aesthetic consistency  
 
-### 🛠️ Requirements
+## 🛠️ Tech Stack
 
-- Node 18+
-  - https://nodejs.org/en
-- Yarn
-  - https://classic.yarnpkg.com/en/docs/getting-started
+| Category | Technology |
+|-----------|-------------|
+| Framework | [Next.js]( https://nextjs.org/) |
+| Styling | [Tailwind CSS]( https://tailwindcss.com/ ) |
+| Animations | [Framer Motion]( https://www.framer.com/motion/ ) |
+| Fonts | [Montserrat](https://fonts.google.com/specimen/Montserrat) , [Poltawski Nowy]( https://fonts.google.com/specimen/Poltawski+Nowy ) |
+| Deployment | [vercel]( https://www.vercel.com/ ) |
+| Package Manager | npm |
 
 
+## 🚀 Getting Started
 
-## 🎬 Getting Started
+Follow these steps to run the project locally.
+```bash
+### 1. Clone the repository
+```bash
+git clone https://github.com/asett12/PortfolioNann.git
+cd PortfolioNann
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/lilxyzz/nextemp.git
-    ```
+### 2. Install dependencies
+npm install
 
-2. Navigate into the repository:
-    ```bash
-    cd NexTemp
-    ```
+### 3. Run the development server
+npm run dev
+Then open http://localhost:3000
+ in your browser.
+```
 
-3. Install the dependencies:
-    ```bash
-    yarn
-    ```
+You can preview the live site here:
+👉 https://portfolio-nann.vercel.app/
 
-4. Run the development server:
-    ```bash
-    yarn dev
-    ```
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Screenshots
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eaa87995-22f6-4403-b9b4-cef573ec2070" alt="Light Mode Screenshot" width="45%" />
+  &nbsp;
+  <img src="https://github.com/user-attachments/assets/a0d3d3ce-7fc2-49af-9a80-543b7e8beacd" alt="Dark Mode Screenshot" width="45%" />
+</p>
+<p align="center">
+  <sub><b>Light Mode</b></sub>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub><b>Dark Mode</b></sub>
+</p>
 
-#### 🙏 Thanks
-If you like this theme, don't forget to give it a ⭐.
+##  👩‍💻 Developer & Credits
 
-#### 🤝 Contributing
-Got enhancements you envision? Contributions are welcome! Fork the repo, push your changes, and submit a pull request. Let's make this theme better, together.
+Developed by: Asett
+For: Nann — B.B.A. International Business, Rangsit University International College
 
-#### 👾 Issues
-For any challenges encountered, please feel free to report issues through our issue tracker.
-
-#### 📝 License
-This project is open source and available under the MIT License.
+This project demonstrates professional portfolio implementation practices using modern front-end technologies.
