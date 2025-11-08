@@ -64,3 +64,9 @@ Developed by: Asett
 For: Nann — B.B.A. International Business, Rangsit University International College
 
 This project demonstrates professional portfolio implementation practices using modern front-end technologies.
+
+### 🙏 Template Credit
+
+This portfolio was initially inspired by and built upon a template created by  
+**[Travis Lord (lilxyzz)](https://github.com/lilxyzz)**.  
+Significant customization, redesign, and functionality enhancements were implemented to align with the client’s branding and requirements.
