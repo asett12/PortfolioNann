@@ -26,7 +26,6 @@ export default function ThankYouVideo() {
 
           <p className="mb-8 max-w-xl text-center text-base font-medium text-gray-600 dark:text-gray-300 md:text-sm">
             I really appreciate you taking the time to explore my projects.
-            Here’s a short thank-you video I made just for visitors like you. 💙
           </p>
 
           {/* Video container */}
@@ -40,8 +39,7 @@ export default function ThankYouVideo() {
               controls
               className="relative z-10 w-full h-[600px] md:h-[420px] sm:h-[320px] rounded-3xl object-cover"
             >
-              {/* TODO: replace src with your real video path */}
-              <source src="/videos/thank-you.mp4" type="video/mp4" />
+              <source src="/videos/thank-you.mov" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
