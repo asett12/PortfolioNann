@@ -39,7 +39,7 @@ export default function ThankYouVideo() {
               controls
               className="relative z-10 w-full h-[600px] md:h-[420px] sm:h-[320px] rounded-3xl object-cover"
             >
-              <source src="/videos/thank-you.mov" type="video/mp4" />
+              <source src="/videos/thank-you.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

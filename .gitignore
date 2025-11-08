@@ -1,17 +1,11 @@
-# OS junk
 .DS_Store
 
-# Build output
 .next
 
-# Editor folders
 .vscode
 
-# Local environment
 .env.local
 
-# Ignore dependencies
 node_modules/
 
-# Ignore large media
-public/videos/thank-you.mov
+public/videos/thank-you.mp4
