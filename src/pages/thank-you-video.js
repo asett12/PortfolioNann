@@ -18,7 +18,7 @@ export default function ThankYouVideo() {
       <TransitionEffect />
 
       <main className="flex min-h-screen w-full items-center justify-center bg-light text-dark dark:bg-dark dark:text-light">
-        <Layout className="pt-16 pb-24 flex flex-col items-center">
+        <Layout className="flex flex-col items-center pt-16 pb-24">
           <AnimatedText
             text="Thanks for visiting my portfolio 🎥"
             className="mb-8 !text-5xl text-center lg:!text-4xl md:!text-3xl"
@@ -33,15 +33,19 @@ export default function ThankYouVideo() {
             className="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-slate-700/50 
             bg-gradient-to-br from-[#05070a] via-[#050505] to-[#111827] shadow-2xl"
           >
-            <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-lightGreen/10 via-transparent to-slideGreen/15" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-lightGreen/10 via-transparent to-slideGreen/15" />
 
-            <video
-              controls
-              className="relative z-10 w-full h-[600px] md:h-[420px] sm:h-[320px] rounded-3xl object-cover"
-            >
-              <source src="/videos/thank-you.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {/* Responsive 16:9 YouTube embed */}
+            <div className="relative z-10 w-full pt-[56.25%]">
+              <iframe
+                src="https://www.youtube.com/embed/FiJfq23NAAA?rel=0&autoplay=1&mute=1&playsinline=1"
+                title="Thank You Video"
+                className="absolute inset-0 h-full w-full rounded-3xl"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
           </div>
 
           {/* Buttons */}

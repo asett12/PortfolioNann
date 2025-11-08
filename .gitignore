@@ -1,11 +1,18 @@
+# macOS system files
 .DS_Store
 
+# Next.js build output
 .next
 
+# VS Code settings
 .vscode
 
-.env.local
-
+# Node dependencies
 node_modules/
 
+# Environment variables
+.env.local
+
+# Ignore large local video files (old versions)
+public/videos/thank-you.mov
 public/videos/thank-you.mp4
