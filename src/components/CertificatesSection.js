@@ -33,7 +33,7 @@ const CERTIFICATES = [
     type: "Recommendation Letter",
     description:
       "A professional recommendation letter highlighting my performance, growth, and contributions during my front-end development internship.",
-    href: "/docs/Recommendation-Letter-2.pdf",
+    href: "/docs/Recommendation-Letter-2-fixed.pdf",
   },
   {
     id: "rec-letter-3",
