@@ -13,11 +13,11 @@ const montserrat = Montserrat({
 const CERTIFICATES = [
   {
     id: "rec-letter-1",
-    title: "Let's Share – Volunteer",
-    issuer: "From: May Twetar Kyaw, Founder of Let's Share",
+    title: "Interlic New Zealand Limited – Social Content Creator",
+    issuer: "From: Mary-Ann Hall, Chief Operating Officer",
     quote:
-      "“What drew my attention to Nann was her active participation in social skill improvement projects and academic work.” — Let's Share Foundation",
-    date: "2021",
+      "“Nann works professionally at all times and has been easy to work with remotely, requiring minimal supervision” — Interlic New Zealand Limited",
+    date: "2026",
     type: "Recommendation Letter",
     description:
       "A professional recommendation letter highlighting my performance, growth, and contributions during my volunteer experience.",

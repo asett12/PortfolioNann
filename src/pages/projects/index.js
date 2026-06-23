@@ -9,8 +9,6 @@ import { HireMe2 } from "@/components/HireMe2";
 import TransitionEffect from "@/components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";
 
-import proj1 from "/public/images/projects/clay-theme.png";
-
 const FramerImage = motion(Image);
 
 const MovingImg = ({ title, img, link }) => {
@@ -244,8 +242,8 @@ export default function Projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Event & Marketing"
-                tools="Sales | Event Marketing | Customer Engagement"
+                type="Event & Public Speaking"
+                tools="Professional Communication | Networking"
                 title="Event Projects"
                 img="/images/events/it&cma/mainEvent.png"
                 date="2023"
@@ -258,7 +256,7 @@ export default function Projects() {
               <Project
                 type="Research & Visual Designs"
                 tools="UI/UX Designs | Innovation | Research"
-                title="Academic & Innovation Projects"
+                title="Innovation Projects"
                 img="/images/Academic/China-ASEAN/mainAcademic.png"
                 date="2023"
                 link="/projects/academic"

@@ -1,6 +1,3 @@
-import proj1 from "/public/images/projects/clay-theme.png";
-
-//EVENTS
 export const EVENT_PROJECTS = [
   {
     id: "itcma",
@@ -54,95 +51,56 @@ export const EVENT_PROJECTS = [
     ],
   },
   {
-    id: "rsunival",
-    title: "RSUnival 2024",
-    headline: "RSUnival 2024 – Food Booth Experience",
-    tag: "Sales | Customer Service | Marketing Strategies",
+    id: "RIC Learning Outcomes EP.10",
+    title: "IB.ICT.MIDB Programs",
+    headline: "RIC Learning Outcomes EP.10 (Rangsit University)",
+    tag: "Communication | Presentation | Public Speaking",
     overview:
-      "During the RSUnival event, I gained hands-on sales and customer service experience by managing a food booth that featured Korean Kimbap (Day 1) and Mala Luk Chin Salad (Day 2). Both products were strategically selected based on current student food trends and sold out on both days.",
+      "As part of the RIC Learning Outcomes Program EP.10 , our team, InnoTrio, was invited to share our experiences from participating in the China-ASEAN Innovation Quest 2025 held at Sunway University, Malaysia. The event provided an opportunity to reflect on our innovation journey, discuss the competition experience, and inspire fellow students to pursue international innovation and entrepreneurship opportunities.",
     bullets: [
-      "Managed product pricing and real-time sales operations during peak hours.",
-      "Engaged directly with customers to promote products and adapted strategies to maximize sales.",
+      "Shared insights on problem identification, solution development, business model creation, and preparing for an international innovation competition.",
+      "Engaged with students and faculty members through discussions and Q&A sessions about innovation, entrepreneurship, teamwork, and project development.",
     ],
     learning:
-      "This experience strengthened my ability to analyze consumer behavior, communicate value, and work efficiently under pressure in a fast-paced environment — skills essential in both marketing and event management.",
-    image: "/images/events/rsunival/rsunival-3.jpg",
+      "Participating in RIC Learning Outcomes Program 2026 strengthened my skills in public speaking, project presentation, and strategic communication. Presenting our project to a wider audience allowed me to translate complex technical concepts into clear and impactful messages.",
+    image: "/images/events/it&cma/it&cma-7.jpg",
+
     links: [
-      { href: "/projects/events/rsunival", label: "Visit Demo", primary: true },
+      { href: "/projects/events/itcma", label: "Visit Demo", primary: true },
       { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
       {
         href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
         icon: "medium",
       },
     ],
+
     gallery: [
         {
-            src: "/images/events/rsunival/rsunival-2.jpg",
-            caption: "Menu Poster"
+            src: "/images/events/ricLearn/Group1.jpg",
+            caption: "Group Photo"
         },
         {
-            src: "/images/events/rsunival/rsunival-3.jpg",
-            caption: "Booth Setup"
+            src: "/images/events/ricLearn/Group3.JPG",
+            caption: "Group Photo"
         },
         {
-            src: "/images/events/rsunival/rsunival-8.png",
-            caption: "Booth Setup"
+            src: "/images/events/ricLearn/Group4.JPG",
+            caption: "Group Photo"
         },
         {
-            src: "/images/events/rsunival/rsunival-5.jpg",
-            caption: "Booth Setup"
+            src: "/images/events/ricLearn/Carabao.JPG",
+            caption: "Group Photo"
         },
         {
-            src: "/images/events/rsunival/rsunival-6.jpg",
-            caption: "Booth Setup"
+            src: "/images/events/ricLearn/Onstage.JPG",
+            caption: "Group Photo"
         },
         {
-            src: "/images/events/rsunival/rsunival-7.jpg",
-            caption: "Booth Setup"
-        },
-    ],
-  },
-  {
-    id: "pro-in-style",
-    title: "Pro In Style Event 2024",
-    headline: "“Pro In Style” Event 2024 – Photobooth Experience",
-    tag: "Marketing | Event Promotion | Campaign Planning",
-    overview:
-      "As part of the Photobooth Team at the “Pro In Style” event, I gained hands-on experience in event marketing and promotion strategy. Our team launched the campaign “Buy 1 Bubble Tea, Get 1 Polaroid Photo Free,” which effectively increased customer engagement and sales by merging product promotion with a fun interactive experience.",
-    bullets: [
-      "Collaborated on branding, pricing strategy, and on-site customer interaction.",
-      "Helped design a visually appealing booth and campaign visuals to attract attendees.",
-    ],
-    learning:
-      "This experience improved my understanding of audience targeting, experiential marketing, and campaign planning, while strengthening my communication, teamwork, and decision-making abilities in a fast-paced event setting.",
-    image: "/images/events/proInStyle/pro-in-style-4.PNG",
-    links: [
-      { href: "/projects/events/pro-in-style", label: "Visit Demo", primary: true },
-      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
-      {
-        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
-        icon: "medium",
-      },
-    ],
-    gallery: [
-        {
-            src: "/images/events/proInStyle/pro-in-style-1.jpg",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/events/proInStyle/pro-in-style-2.jpg",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/events/proInStyle/pro-in-style-3.jpg",
-            caption: "Booth Setup"
-        },
-        {
-            src: "/images/events/proInStyle/pro-in-style-4.PNG",
+            src: "/images/events/ricLearn/Group2.JPG",
             caption: "Group Photo"
         },
     ],
-  },
+  }
 ];
 
 //ACADEMIC 
@@ -370,15 +328,105 @@ export const MARKETING_EXPERIENCES = [
             caption: "Donation Receipt"
         },
     ],
-  }
+  },
+  {
+    id: "rsunival",
+    title: "RSUnival 2024",
+    headline: "RSUnival 2024 – Food Booth Experience",
+    tag: "Sales | Customer Service | Marketing Strategies",
+    overview:
+      "During the RSUnival event, I gained hands-on sales and customer service experience by managing a food booth that featured Korean Kimbap (Day 1) and Mala Luk Chin Salad (Day 2). Both products were strategically selected based on current student food trends and sold out on both days.",
+    bullets: [
+      "Managed product pricing and real-time sales operations during peak hours.",
+      "Engaged directly with customers to promote products and adapted strategies to maximize sales.",
+    ],
+    learning:
+      "This experience strengthened my ability to analyze consumer behavior, communicate value, and work efficiently under pressure in a fast-paced environment — skills essential in both marketing and event management.",
+    image: "/images/events/rsunival/rsunival-3.jpg",
+    links: [
+      { href: "/projects/events/rsunival", label: "Visit Demo", primary: true },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
+      {
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
+      },
+    ],
+    gallery: [
+        {
+            src: "/images/events/rsunival/rsunival-2.jpg",
+            caption: "Menu Poster"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-3.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-8.png",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-5.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-6.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/rsunival/rsunival-7.jpg",
+            caption: "Booth Setup"
+        },
+    ],
+  },
+  {
+    id: "pro-in-style",
+    title: "Pro In Style Event 2024",
+    headline: "“Pro In Style” Event 2024 – Photobooth Experience",
+    tag: "Marketing | Event Promotion | Campaign Planning",
+    overview:
+      "As part of the Photobooth Team at the “Pro In Style” event, I gained hands-on experience in event marketing and promotion strategy. Our team launched the campaign “Buy 1 Bubble Tea, Get 1 Polaroid Photo Free,” which effectively increased customer engagement and sales by merging product promotion with a fun interactive experience.",
+    bullets: [
+      "Collaborated on branding, pricing strategy, and on-site customer interaction.",
+      "Helped design a visually appealing booth and campaign visuals to attract attendees.",
+    ],
+    learning:
+      "This experience improved my understanding of audience targeting, experiential marketing, and campaign planning, while strengthening my communication, teamwork, and decision-making abilities in a fast-paced event setting.",
+    image: "/images/events/proInStyle/pro-in-style-4.PNG",
+    links: [
+      { href: "/projects/events/pro-in-style", label: "Visit Demo", primary: true },
+      { href: "https://www.linkedin.com/in/nanohnmarwai109/", icon: "linkedIn" },
+      {
+        href: "https://mail.google.com/mail/?view=cm&fs=1&to=nanohnmarwai109@gmail.com&su=Hello%20Nan%20Ohnmar%20Wai&body=Hi%20Nan,",
+        icon: "medium",
+      },
+    ],
+    gallery: [
+        {
+            src: "/images/events/proInStyle/pro-in-style-1.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/proInStyle/pro-in-style-2.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/proInStyle/pro-in-style-3.jpg",
+            caption: "Booth Setup"
+        },
+        {
+            src: "/images/events/proInStyle/pro-in-style-4.PNG",
+            caption: "Group Photo"
+        },
+    ],
+  },
 ];
 
-// main map that your pages read from
+// main map thatE pages read from
 export const PROJECT_CATEGORIES = {
   events: {
-    title: "Event Marketing & Campaigns",
+    title: "International Events & Programs",
     description:
-      "Explore my hands-on experience in event marketing and promotional campaigns, spanning international conventions and university events.",
+      "Explore my hands-on experience in joining events and programs spanning international conventions and universities.",
     items: EVENT_PROJECTS,
   },
   academic: {
@@ -388,9 +436,9 @@ export const PROJECT_CATEGORIES = {
     items: ACADEMIC_PROJECTS,
   },
   marketing: {
-    title: "Marketing, Events & Fundraising",
+    title: "Marketing & Fundraising Campaigns",
     description:
-      "Volunteer, fundraising, and marketing experiences focused on teamwork and real-world impact.",
+      "Fundraising campaigns and volunteer experiences focused on teamwork collaboration and real-world impact.",
     items: MARKETING_EXPERIENCES,
   },
 };

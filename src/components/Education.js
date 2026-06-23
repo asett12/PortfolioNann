@@ -3,18 +3,12 @@
 import { motion } from "framer-motion";
 
 const EDUCATION = [
-  {
-    id: "uop",
-    period: "April 2024 – Present",
-    school: "Business Administration",
-    degree: "Bachelor of Arts",
-    location: "University of the People (Online)",
-  },
+  
   {
     id: "rangsit",
     period: "June 2022 – Decemer 2025",
     school: "International Business",
-    degree: "Bachelor of Business Administration",
+    degree: "Bachelor of Business Administration (First Honor)",
     location: "Rangsit University",
   },
   {

@@ -3,7 +3,7 @@ import Head from "next/head";
 import SkeletonImage from "@/components/SkeletonImage";
 import profile from "../../public/images/profile/Nann1.png";
 import { useInView, useMotionValue, useSpring, motion,  AnimatePresence } from "framer-motion";
-import { useEffect, useRef, useState } from "react"; // ⬅️ added useState
+import { useEffect, useRef, useState } from "react"; 
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
@@ -42,7 +42,7 @@ export default function About() {
     { id: "bio", label: "Biography" },
     { id: "skills", label: "Skills" },
     { id: "education", label: "Education" },
-    { id: "certificates", label: "Certificates" },
+    { id: "recommendation", label: "Recommendation" },
     { id: "experience", label: "Internship" },
   ];
 
@@ -115,27 +115,17 @@ export default function About() {
                   BIOGRAPHY
                 </h2>
                 <p className="font-medium ">
-                  Hi! I’m Nan Ohmar Wai, a fresh graduate International Business
-                  student at Rangsit University with a strong passion for event
-                  management, digital marketing, and community engagement. I’m
-                  highly motivated, detail-oriented, and thrive in dynamic
-                  environments where creativity meets organization. Over the
-                  past few years, I’ve gained hands-on experience in sales
-                  outreach, event planning, and promotional campaigns through
-                  internships and student projects. These experiences have
-                  strengthened my skills in strategic planning, project
-                  coordination, communication, and market analysis.
+                  Hi! I'm Nan Ohmar Wai, an International Business graduate from Rangsit University with a strong passion 
+                  for social media management, content creation, and digital marketing. Throughout my professional experiences,
+                  I have managed social media platforms, developed content strategies, 
+                  designed graphic visuals, and edited short-form videos for education, wellness, and mental health organizations.
+                
                 </p>
                 <p className="my-4 font-medium">
-                  Beyond academics, I’ve also participated in volunteer
-                  programs, leadership initiatives, and social impact projects,
-                  which have allowed me to develop a deeper understanding of
-                  teamwork, youth empowerment, and community engagement. I’m
-                  passionate about creating meaningful experiences and building
-                  connections through events, marketing, and creative projects.
-                  My goal is to continue growing as a marketing and event
-                  professional — combining business strategy with creativity to
-                  make a positive impact wherever I work.
+                  I am a creative, detail-oriented, and adaptable professional who enjoys staying up to date with digital trends and continuously learning 
+                  new tools and techniques. My goal is to continue growing in content marketing and social media management roles 
+                  where I can combine creativity, strategy, and design to help brands increase their online presence 
+                  and engage their communities effectively.
                 </p>
               </div>
 
@@ -180,7 +170,7 @@ export default function About() {
                 {/* Social Media Posts */}
                 <div className="flex flex-col items-end justify-center text-right">
                   <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                    <AnimatedNumberFramerMotion value={25} />+
+                    <AnimatedNumberFramerMotion value={100} />+
                   </span>
                   <h3
                     className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
@@ -193,7 +183,7 @@ export default function About() {
                 {/* Combined Reach */}
                 <div className="flex flex-col items-end justify-center text-right">
                   <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                    <AnimatedNumberFramerMotion value={5000} />+
+                    <AnimatedNumberFramerMotion value={100} />K+
                   </span>
                   <h3
                     className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
@@ -219,7 +209,7 @@ export default function About() {
           </section>
 
           {/* CERTIFICATES */}
-          <section id="certificates" className="mt-24 scroll-mt-28">
+          <section id="recommendation" className="mt-24 scroll-mt-28">
             <CertificatesSection />
           </section>
 

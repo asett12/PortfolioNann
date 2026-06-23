@@ -63,8 +63,8 @@ export default function Home() {
                 >
                   <TypewriterText
                     words={[
-                      "Creative Event &",
-                      "Marketing Enthusiast",
+                      "Content Creator &",
+                      "Social Media Manager",
                     ]}
                     typingSpeed={85}
                     eraseSpeed={55}
@@ -75,9 +75,9 @@ export default function Home() {
               </div>
 
               <p className="my-4 text-base font-medium md:text-sm sm:!text-sm">
-                I'm a fresh graduate business student passionate about creating meaningful
-                experiences through event management, marketing and creative collaboration.
-                I enjoy bringing people together and turning ideas into reality.
+                I'm an International Business graduate with a passion for social media management, content creation, and digital marketing. 
+                With a strong combination of creativity, communication, and analytical thinking, I enjoy helping brands strengthen their 
+                online presence and build meaningful connections with their audiences.
               </p>
 
               <div className="mt-2 flex items-center self-start gap-3 lg:self-center">
