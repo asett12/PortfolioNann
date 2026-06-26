@@ -60,12 +60,12 @@ const SKILL_SETS = {
     skills: [
       { name: "Content Creation", x: "0vw", y: "-12vw", mobile: { x: "0vw", y: "-30vw" } },
       { name: "Social Media Management", x: "0vw", y: "12vw", mobile: { x: "0vw", y: "30vw" } },
-      { name: "Market Research", x: "-20vw", y: "5vw", mobile: { x: "-25vw", y: "15vw" } },
-      { name: "Digital Marketing", x: "20vw", y: "5vw", mobile: { x: "25vw", y: "15vw" } },
-      { name: "Video Editing", x: "20vw", y: "-5vw", mobile: { x: "25vw", y: "-15vw" } },
-      { name: "Community Management", x: "20vw", y: "-5vw", mobile: { x: "25vw", y: "-15vw" } },
-      { name: "Graphic Design", x: "20vw", y: "-5vw", mobile: { x: "25vw", y: "-15vw" } },
-      { name: "Social Media Analytics", x: "-20vw", y: "-5vw", mobile: { x: "-25vw", y: "-15vw" } },
+      { name: "Market Research", x: "-20vw", y: "7vw", mobile: { x: "-25vw", y: "15vw" } },
+      { name: "Digital Marketing", x: "20vw", y: "7vw", mobile: { x: "25vw", y: "15vw" } },
+      { name: "Video Editing", x: "-25vw", y: "-0vw", mobile: { x: "-30vw", y: "-0vw" } },
+      { name: "Community Management", x: "25vw", y: "-0vw", mobile: { x: "30vw", y: "-0vw" } },
+      { name: "Graphic Design", x: "20vw", y: "-7vw", mobile: { x: "25vw", y: "-15vw" } },
+      { name: "Social Media Analytics", x: "-20vw", y: "-7vw", mobile: { x: "-25vw", y: "-15vw" } },
     ],
   },
 };
